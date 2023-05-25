@@ -28,8 +28,14 @@ const sidebarLinks = [
   {
     href: "/loans",
     icon: "cash-coin",
-    text: "Loans"
-  }
+    text: "Loans",
+  },
+
+  {
+    href: "/credit-cards",
+    icon: "credit-card",
+    text: "Credit Cards",
+  },
 ];
 
 export default function RootLayout({
@@ -56,7 +62,7 @@ export default function RootLayout({
                 href="/"
                 className="d-flex align-items-center text-decoration-none link-body-emphasis"
               >
-                <span className="fs-4">Ahmed Mohsen</span>
+                <span className="fs-1">Bankaak</span>
               </Link>
               <ul className="nav nav-pills flex-column my-auto">
                 {sidebarLinks.map((link) => (
@@ -74,34 +80,15 @@ export default function RootLayout({
                   </li>
                 ))}
               </ul>
+              <div className="d-flex justify-content-start align-items-center gap-3 border-top pt-4">
+                <img src="/ahmed-mohsen.png" height={45} width={45} className="rounded-circle"/>
+                Ahmed Mohsen!
+              </div>
             </div>
 
             <div className="col-md-4 col-xl-2 col-lg-3 "></div>
 
             <div className="col">
-              <nav className="navbar navbar-expand-lg bottom">
-                <div className="container-fluid">
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="navbar-toggler-icon"></span>
-                  </button>
-                  <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ms-auto">
-                      <li className="nav-item">
-                        <a className="nav-link">Disabled</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-              
               {children}
             </div>
           </div>
