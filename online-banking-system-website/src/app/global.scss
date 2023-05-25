@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+}
+
+$light:      #210928;
+$dark:       #8a33d6;
+$primary:    #451e5c;
+$secondary:  #ec4041;
+$info:       #505067;
+$success:    #259661;
+$warning:    #d9c929;
+$danger:     #e33015;
+
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
