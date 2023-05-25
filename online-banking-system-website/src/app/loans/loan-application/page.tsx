@@ -5,10 +5,10 @@ export default function Home() {
         <div className="card">
           <div className="card-body">
             <h1 className="card-title">Loan Application Form</h1>
-            <form>
+            <form className="d-flex flex-column gap-3">
               <div className="row">
                 <div className="col">
-                  <div className="mb-3">
+                  <div className="">
                     <label htmlFor="desiredAmmount" className="form-label">
                       Desired Loan Amount ($)
                     </label>
@@ -20,7 +20,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col">
-                  <div className="mb-3">
+                  <div className="">
                     <label htmlFor="annualIncome" className="form-label">
                       Annual Income ($)
                     </label>
@@ -32,7 +32,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="input-group mb-3">
+              <div className="input-group ">
                 <label className="input-group-text" htmlFor="loanType">
                   Loan Type
                 </label>
@@ -42,20 +42,20 @@ export default function Home() {
                   <option value="2">Car Loan</option>
                 </select>
               </div>
-              <div className="mb-3">
+              <div className="">
                 <label htmlFor="reason" className="form-label">
                   Reason For Application
                 </label>
                 <textarea className="form-control" id="reason" />
               </div>
               <h3>Personal Information</h3>
-              <div className="mb-3">
+              <div className="">
                 <label htmlFor="birthDate" className="form-label">
                   Date Of Birth
                 </label>
                 <input type="date" className="form-control" id="birthDate" />
               </div>
-              <div className="input-group mb-3">
+              <div className="input-group ">
                 <label className="input-group-text" htmlFor="maritalStatus">
                   Marital Status
                 </label>
@@ -69,7 +69,7 @@ export default function Home() {
               <h3>Employment Information</h3>
               <div className="row">
                 <div className="col">
-                  <div className="mb-3">
+                  <div className="">
                     <label htmlFor="employer" className="form-label">
                       Present Employer
                     </label>
@@ -77,7 +77,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col">
-                  <div className="mb-3">
+                  <div className="">
                     <label htmlFor="occupation" className="form-label">
                       Current Occupation
                     </label>
@@ -89,7 +89,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="mb-3">
+              <div className="">
                 <label htmlFor="exp" className="form-label">
                   Years Of Experience
                 </label>
@@ -97,7 +97,7 @@ export default function Home() {
               </div>
               <div className="row">
                 <div className="col">
-                  <div className="mb-3">
+                  <div className="">
                     <label htmlFor="income" className="form-label">
                       Gross Monthly Income ($)
                     </label>
@@ -105,7 +105,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col">
-                  <div className="mb-3">
+                  <div className="">
                     <label htmlFor="rent" className="form-label">
                       Monthly Rent/Mortgage ($)
                     </label>
@@ -113,13 +113,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="mb-3">
+              <div className="">
                 <label htmlFor="exp" className="form-label">
                   Desired Installment Ammount ($)
                 </label>
                 <input type="number" className="form-control" id="exp" />
               </div>
-              <div className="mb-3">
+              <div className="">
                 <label htmlFor="comments" className="form-label">
                   Comments
                 </label>
@@ -128,7 +128,7 @@ export default function Home() {
               <h3>Bank References</h3>
               <div className="row">
                 <div className="col">
-                  <div className="mb-3">
+                  <div className="">
                     <label htmlFor="bank" className="form-label">
                       Bank Name
                     </label>
@@ -136,7 +136,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col">
-                  <div className="mb-3">
+                  <div className="">
                     <label htmlFor="accountnum" className="form-label">
                       Saving Account Number
                     </label>
@@ -149,7 +149,7 @@ export default function Home() {
                 </div>
               </div>
               <h4>CONSENT</h4>
-              <div className="mb-3 form-check">
+              <div className=" form-check">
                 <input
                   type="checkbox"
                   className="form-check-input"
