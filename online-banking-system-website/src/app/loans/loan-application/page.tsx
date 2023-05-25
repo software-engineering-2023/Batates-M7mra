@@ -1,10 +1,10 @@
 export default function Home() {
   return (
     <div className="row h-100 d-flex justify-content-center align-items-center">
-      <div className="col-8">
+      <div className="col-xl-8 col-lg-10 col-md-12">
         <div className="card">
           <div className="card-body">
-            <h1>LOAN APPLICATION FORM</h1>
+            <h1 className="card-title">Loan Application Form</h1>
             <form>
               <div className="row">
                 <div className="col">
@@ -66,12 +66,6 @@ export default function Home() {
                   <option value="3">Other</option>
                 </select>
               </div>
-              <div className="mb-3">
-                <label htmlFor="exampleInput2" className="form-label">
-                  example
-                </label>
-                <input type="date" className="form-control" id="example2" />
-              </div>
               <h3>Employment Information</h3>
               <div className="row">
                 <div className="col">
@@ -132,7 +126,6 @@ export default function Home() {
                 <textarea className="form-control" id="comments" />
               </div>
               <h3>Bank References</h3>
-              <p>Please List Here</p>
               <div className="row">
                 <div className="col">
                   <div className="mb-3">

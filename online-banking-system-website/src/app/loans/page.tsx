@@ -1,5 +1,7 @@
 export default function Home() {
     return (
-      <h1>Hello, world!</h1>
+      <div className="container">
+        <h1>Loan Application</h1>
+      </div>
     )
   }
