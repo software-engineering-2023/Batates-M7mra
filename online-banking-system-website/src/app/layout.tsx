@@ -25,6 +25,11 @@ const sidebarLinks = [
     icon: "arrow-right-square",
     text: "Transactions",
   },
+  {
+    href: "/loans/loan-application",
+    icon: "wallet",
+    text: "Loans"
+  }
 ];
 
 export default function RootLayout({
@@ -67,7 +72,7 @@ export default function RootLayout({
             </div>
 
             <div className="col">
-              <h1>Hello</h1>
+              {children}
             </div>
           </div>
         </div>
