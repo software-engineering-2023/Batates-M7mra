@@ -26,8 +26,8 @@ const sidebarLinks = [
     text: "Transactions",
   },
   {
-    href: "/loans/loan-application",
-    icon: "wallet",
+    href: "/loans",
+    icon: "cash-coin",
     text: "Loans"
   }
 ];
