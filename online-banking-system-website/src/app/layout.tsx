@@ -29,7 +29,8 @@ const sidebarLinks = [
     href: "/loans",
     icon: "cash-coin",
     text: "Loans"
-  }
+  },
+  
 ];
 
 export default function RootLayout({

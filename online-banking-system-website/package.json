@@ -14,15 +14,20 @@
     "@types/react-dom": "18.2.4",
     "bootstrap": "^5.3.0-alpha3",
     "bootstrap-icons": "^1.10.5",
+    "chart.js": "^4.3.0",
     "clsx": "^1.2.1",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
     "next": "13.4.3",
     "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.0.1",
+    "@types/faker": "^6.6.9",
+    "faker": "^5.5.3",
     "sass": "^1.62.1"
   }
 }

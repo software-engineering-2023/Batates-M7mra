@@ -19,7 +19,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="col">
+                <div className="col"> 
                   <div className="">
                     <label htmlFor="annualIncome" className="form-label">
                       Annual Income ($)
