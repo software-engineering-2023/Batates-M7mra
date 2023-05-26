@@ -11,19 +11,37 @@ export default function Accounts() {
                   <label htmlFor="firstName" className="form-label">
                     First Name
                   </label>
-                  <input type="text" className="form-control" id="firstName" disabled placeholder="McLovin"/>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="firstName"
+                    disabled
+                    placeholder="McLovin"
+                  />
                 </div>
                 <div className="col">
                   <label htmlFor="middleName" className="form-label">
                     Middle Name
                   </label>
-                  <input type="text" className="form-control" id="middleName" disabled placeholder="John"/>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="middleName"
+                    disabled
+                    placeholder="John"
+                  />
                 </div>
                 <div className="col">
                   <label htmlFor="lastName" className="form-label">
                     Last Name
                   </label>
-                  <input type="text" className="form-control" id="lastName" disabled placeholder="Doe"/>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="lastName"
+                    disabled
+                    placeholder="Doe"
+                  />
                 </div>
               </div>
               <div className="row">
@@ -43,7 +61,13 @@ export default function Accounts() {
                   <label htmlFor="password" className="form-label">
                     Password
                   </label>
-                  <input type="text" className="form-control" id="password" disabled placeholder="********"/>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="password"
+                    disabled
+                    placeholder="********"
+                  />
                 </div>
               </div>
               <div className="row">
@@ -77,20 +101,38 @@ export default function Accounts() {
                   <label htmlFor="counttry" className="form-label">
                     Country
                   </label>
-                  <input type="text" className="form-control" id="country" disabled placeholder="United States"/>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="country"
+                    disabled
+                    placeholder="United States"
+                  />
                 </div>
                 <div className="col">
                   <label htmlFor="city" className="form-label">
                     City
                   </label>
-                  <input type="text" className="form-control" id="city" disabled placeholder="Honululu"/>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="city"
+                    disabled
+                    placeholder="Honululu"
+                  />
                 </div>
               </div>
               <div className="row ms-1 me-1">
                 <label htmlFor="address" className="form-label">
                   Address
                 </label>
-                <input type="text" className="form-control" id="address" disabled placeholder="892 Momona st."/>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="address"
+                  disabled
+                  placeholder="892 Momona st."
+                />
               </div>
               <div className="row ms-1 me-1">
                 <label htmlFor="nationalIDnumber" className="form-label">
@@ -110,22 +152,24 @@ export default function Accounts() {
                     Marital Status
                   </label>
                   <select className="form-select" id="maritalStatus" disabled>
-                    <option value="" disabled selected>Single</option>
+                    <option value="" disabled selected>
+                      Single
+                    </option>
                   </select>
                 </div>
               </div>
               <div className="row">
                 <div className="col">
-                <label htmlFor="front" className="form-label">
+                  <label htmlFor="front" className="form-label">
                     ID Photo (Front)
                   </label>
                   <img src="/front.jpg" width={381}></img>
                 </div>
                 <div className="col">
-                <label htmlFor="back" className="form-label">
-                ID Photo (Back)
+                  <label htmlFor="back" className="form-label">
+                    ID Photo (Back)
                   </label>
-                <img src="/back.jpg" width={381}></img>
+                  <img src="/back.jpg" width={381}></img>
                 </div>
               </div>
               <div className="row">
@@ -145,7 +189,13 @@ export default function Accounts() {
                   <label htmlFor="occupation" className="form-label">
                     Occupation
                   </label>
-                  <input type="text" className="form-control" id="occupation" disabled placeholder="Organ Donor"/>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="occupation"
+                    disabled
+                    placeholder="Organ Donor"
+                  />
                 </div>
               </div>
               <div className="row ms-1 me-1">

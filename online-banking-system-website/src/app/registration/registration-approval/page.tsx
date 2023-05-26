@@ -7,7 +7,7 @@ export default function Accounts() {
             <h1 className="card-title">Registration Approval</h1>
             <form className="d-flex flex-column gap-3">
               <div className="row d-flex justify-content-center fs-3 mb-3">
-                خناقة
+                McLovin Doe
               </div>
               <div className="row">
                 <div className="col">
@@ -37,7 +37,7 @@ export default function Accounts() {
               </div>
               <hr></hr>
               <div className="row d-flex justify-content-center fs-3 mb-3">
-                قطاطس
+                John Doe
               </div>
               <div className="row">
                 <div className="col">
@@ -67,7 +67,7 @@ export default function Accounts() {
               </div>
               <hr></hr>
               <div className="row d-flex justify-content-center fs-3 mb-3">
-                كلكبوت
+                Jane Doe
               </div>
               <div className="row">
                 <div className="col">
@@ -97,7 +97,7 @@ export default function Accounts() {
               </div>
               <hr></hr>
               <div className="row d-flex justify-content-center fs-3 mb-3">
-                برتناقة
+                Makin Doe
               </div>
               <div className="row">
                 <div className="col">
@@ -127,7 +127,157 @@ export default function Accounts() {
               </div>
               <hr></hr>
               <div className="row d-flex justify-content-center fs-3 mb-3">
-                جملكوبتر
+                Bakin Doe
+              </div>
+              <div className="row">
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-success btn-lg w-100"
+                  >
+                    Approve
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary btn-lg w-100"
+                  >
+                    View Information
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-danger btn-lg w-100"
+                  >
+                    Disapprove
+                  </button>
+                </div>
+              </div>
+              <hr></hr>
+              <div className="row d-flex justify-content-center fs-3 mb-3">
+                Eatin Doe
+              </div>
+              <div className="row">
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-success btn-lg w-100"
+                  >
+                    Approve
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary btn-lg w-100"
+                  >
+                    View Information
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-danger btn-lg w-100"
+                  >
+                    Disapprove
+                  </button>
+                </div>
+              </div>
+              <hr></hr>
+              <div className="row d-flex justify-content-center fs-3 mb-3">
+                Fakin Doe
+              </div>
+              <div className="row">
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-success btn-lg w-100"
+                  >
+                    Approve
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary btn-lg w-100"
+                  >
+                    View Information
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-danger btn-lg w-100"
+                  >
+                    Disapprove
+                  </button>
+                </div>
+              </div>
+              <hr></hr>
+              <div className="row d-flex justify-content-center fs-3 mb-3">
+                True Doe
+              </div>
+              <div className="row">
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-success btn-lg w-100"
+                  >
+                    Approve
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary btn-lg w-100"
+                  >
+                    View Information
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-danger btn-lg w-100"
+                  >
+                    Disapprove
+                  </button>
+                </div>
+              </div>
+              <hr></hr>
+              <div className="row d-flex justify-content-center fs-3 mb-3">
+                Dont Doe
+              </div>
+              <div className="row">
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-success btn-lg w-100"
+                  >
+                    Approve
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary btn-lg w-100"
+                  >
+                    View Information
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    type="button"
+                    className="btn btn-outline-danger btn-lg w-100"
+                  >
+                    Disapprove
+                  </button>
+                </div>
+              </div>
+              <hr></hr>
+              <div className="row d-flex justify-content-center fs-3 mb-3">
+                Lovin Doe
               </div>
               <div className="row">
                 <div className="col">
