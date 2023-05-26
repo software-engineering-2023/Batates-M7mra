@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Accounts() {
   return (
     <div className="row h-100 d-flex justify-content-center align-items-center">
@@ -6,7 +8,7 @@ export default function Accounts() {
           <div className="card-body">
             <h1 className="card-title">Registration Approval</h1>
             <form className="d-flex flex-column gap-3">
-              <div className="row d-flex justify-content-center fs-3 mb-3">
+              <div className="row d-flex justify-content-center fs-3 mb-3 mt-5">
                 McLovin Doe
               </div>
               <div className="row">
@@ -19,12 +21,14 @@ export default function Accounts() {
                   </button>
                 </div>
                 <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-lg w-100"
-                  >
-                    View Information
-                  </button>
+                  <Link href="/registration/registration-approval/registration-approval-info">
+                    <button
+                      type="button"
+                      className="btn btn-outline-primary btn-lg w-100"
+                    >
+                      View Information
+                    </button>
+                  </Link>
                 </div>
                 <div className="col">
                   <button

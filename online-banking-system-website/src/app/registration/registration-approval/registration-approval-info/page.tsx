@@ -54,7 +54,7 @@ export default function Accounts() {
                     className="form-control"
                     id="emailAddress"
                     disabled
-                    placeholder="McLovinDoe@gmail.com"
+                    placeholder="McLovinDoe@hotmail.com"
                   />
                 </div>
                 <div className="col">
