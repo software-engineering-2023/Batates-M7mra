@@ -16,6 +16,7 @@ export default function Home() {
                       type="number"
                       className="form-control"
                       id="desiredAmmount"
+                      required
                     />
                   </div>
                 </div>
@@ -28,6 +29,7 @@ export default function Home() {
                       type="number"
                       className="form-control"
                       id="annualIncome"
+                      required
                     />
                   </div>
                 </div>
@@ -36,8 +38,8 @@ export default function Home() {
                 <label className="input-group-text" htmlFor="loanType">
                   Loan Type
                 </label>
-                <select className="form-select" id="loanType">
-                  <option selected>Select Type...</option>
+                <select className="form-select" id="loanType" required>
+                  <option value="" disabled selected>Select your option</option>
                   <option value="1">Personal Loan</option>
                   <option value="2">Car Loan</option>
                 </select>
@@ -46,21 +48,21 @@ export default function Home() {
                 <label htmlFor="reason" className="form-label">
                   Reason For Application
                 </label>
-                <textarea className="form-control" id="reason" />
+                <textarea className="form-control" id="reason" required/>
               </div>
               <h3>Personal Information</h3>
               <div className="">
                 <label htmlFor="birthDate" className="form-label">
                   Date Of Birth
                 </label>
-                <input type="date" className="form-control" id="birthDate" />
+                <input type="date" className="form-control" id="birthDate" required/>
               </div>
               <div className="input-group ">
                 <label className="input-group-text" htmlFor="maritalStatus">
                   Marital Status
                 </label>
-                <select className="form-select" id="maritalStatus">
-                  <option selected>Choose...</option>
+                <select className="form-select" id="maritalStatus" required>
+                  <option value="" disabled selected>Select your option</option>
                   <option value="1">Single</option>
                   <option value="2">Married</option>
                   <option value="3">Other</option>
@@ -73,7 +75,7 @@ export default function Home() {
                     <label htmlFor="employer" className="form-label">
                       Present Employer
                     </label>
-                    <input type="text" className="form-control" id="employer" />
+                    <input type="text" className="form-control" id="employer" required/>
                   </div>
                 </div>
                 <div className="col">
@@ -85,6 +87,7 @@ export default function Home() {
                       type="text"
                       className="form-control"
                       id="occupation"
+                      required
                     />
                   </div>
                 </div>
@@ -93,7 +96,7 @@ export default function Home() {
                 <label htmlFor="exp" className="form-label">
                   Years Of Experience
                 </label>
-                <input type="number" className="form-control" id="exp" />
+                <input type="number" className="form-control" id="exp" required/>
               </div>
               <div className="row">
                 <div className="col">
@@ -101,7 +104,7 @@ export default function Home() {
                     <label htmlFor="income" className="form-label">
                       Gross Monthly Income ($)
                     </label>
-                    <input type="number" className="form-control" id="income" />
+                    <input type="number" className="form-control" id="income" required/>
                   </div>
                 </div>
                 <div className="col">
@@ -109,7 +112,7 @@ export default function Home() {
                     <label htmlFor="rent" className="form-label">
                       Monthly Rent/Mortgage ($)
                     </label>
-                    <input type="number" className="form-control" id="rent" />
+                    <input type="number" className="form-control" id="rent" required/>
                   </div>
                 </div>
               </div>
@@ -117,7 +120,7 @@ export default function Home() {
                 <label htmlFor="exp" className="form-label">
                   Desired Installment Ammount ($)
                 </label>
-                <input type="number" className="form-control" id="exp" />
+                <input type="number" className="form-control" id="exp" required/>
               </div>
               <div className="">
                 <label htmlFor="comments" className="form-label">
@@ -154,6 +157,7 @@ export default function Home() {
                   type="checkbox"
                   className="form-check-input"
                   id="exampleCheck1"
+                  required
                 />
                 <label className="form-check-label" htmlFor="exampleCheck1">
                   I authorize prospective Credit Grantors/Lending/Leasing
