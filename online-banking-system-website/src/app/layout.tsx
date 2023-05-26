@@ -2,10 +2,17 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import clsx from "clsx";
+import { Miriam_Libre } from "next/font/google";
 
 import "./global.scss";
+
+const spaceMono = Miriam_Libre({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--bs-body-font-family",
+});
 
 const sidebarLinks = [
   {
@@ -28,9 +35,14 @@ const sidebarLinks = [
   {
     href: "/loans",
     icon: "cash-coin",
-    text: "Loans"
+    text: "Loans",
   },
-  
+
+  {
+    href: "/credit-cards",
+    icon: "credit-card",
+    text: "Credit Cards",
+  },
 ];
 
 export default function RootLayout({
@@ -43,21 +55,66 @@ export default function RootLayout({
   });
 
   const pathname = usePathname();
+  const router = useRouter();
 
   return (
-    <html lang="en">
+    <html lang="en" className={spaceMono.variable}>
       <head>
         <title>Online Banking System</title>
       </head>
       <body data-bs-theme="dark">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary d-block d-md-none fixed-top">
+          <div className="container-fluid">
+            <a className="navbar-brand" href="#">
+              Bankaak
+            </a>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                {sidebarLinks.map((link) => (
+                  <li className="nav-item">
+                    <a
+                      className={clsx(
+                        "nav-link",
+                        pathname == link.href && "active"
+                      )}
+                      aria-current="page"
+                      href={link.href}
+                    >
+                      <i className={"bi me-2 bi-" + link.icon}></i> {link.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </nav>
+
         <div className="container-fluid h-100">
+          <div className="d-block d-md-none p-4"></div>
           <div className="row h-100">
-            <div className="col-md-4 col-xl-2 col-lg-3 d-flex flex-column flex-shrink-0 p-3 h-100 border-end fixed-top">
+            <div
+              className="col-md-4 col-xl-2 col-lg-3 d-md-flex flex-column flex-shrink-0 p-3 h-100 border-end fixed-top d-none bg-body-tertiary"
+              id="sidebar"
+            >
               <Link
                 href="/"
                 className="d-flex align-items-center text-decoration-none link-body-emphasis"
               >
-                <span className="fs-4">Ahmed Mohsen</span>
+                <span className="fs-1">Bankaak</span>
               </Link>
               <ul className="nav nav-pills flex-column my-auto">
                 {sidebarLinks.map((link) => (
@@ -75,36 +132,20 @@ export default function RootLayout({
                   </li>
                 ))}
               </ul>
+              <div className="d-flex justify-content-start align-items-center gap-3 border-top pt-4">
+                <img
+                  src="/ahmed-mohsen.png"
+                  height={45}
+                  width={45}
+                  className="rounded-circle"
+                />
+                Ahmed Mohsen!
+              </div>
             </div>
 
-            <div className="col-md-4 col-xl-2 col-lg-3 "></div>
+            <div className="col-md-4 col-xl-2 col-lg-3 d-none d-md-block"></div>
 
-            <div className="col">
-              <nav className="navbar navbar-expand-lg bottom">
-                <div className="container-fluid">
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="navbar-toggler-icon"></span>
-                  </button>
-                  <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ms-auto">
-                      <li className="nav-item">
-                        <a className="nav-link">Disabled</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-              
-              {children}
-            </div>
+            <div className="col py-4">{children}</div>
           </div>
         </div>
       </body>

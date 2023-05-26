@@ -1,6 +1,7 @@
 export default function Accounts() {
-    return (
-        <p>mathew hany</p>
-        
-    )
+  return (
+    <label htmlFor="alert alert-primary" role="alert">
+      A simple primary alert—check it out!
+    </label>
+  );
 }
