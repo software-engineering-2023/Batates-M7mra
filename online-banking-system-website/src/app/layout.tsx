@@ -69,6 +69,11 @@ const sidebarLinks: SidebarLink[] = [
     text: "Contact Us",
     userTypes: [UserType.CLIENT],
   },
+  {
+    href: "/report",
+    icon: "bi bi-flag",
+    text: "Report",
+  },
 ];
 
 interface NavbarContext {
