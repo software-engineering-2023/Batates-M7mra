@@ -1,9 +1,10 @@
+import Link from "next/link";
 
 export default function Report() {
    
     return (
-        <div className="container">
-          <h1 className="text-center">Report Status</h1>
+        <div className="container mt-4" >
+          <h1 className="text-center mb-4">Reports Status</h1>
           
             <div className="table-responsive">
               <table className="table table-success table-dark table-hover">
@@ -22,29 +23,30 @@ export default function Report() {
       <td>balabizo</td>
       <td>Technical Issues</td>
       <td>'2023-05-25'</td>
-      <td>Pending</td>
+      <td><span className="badge text-bg-warning">Pending</span></td>
     </tr>
     <tr>
       <td>52-7516</td>
       <td>balabizo</td>
       <td>Fraudulent Activity</td>
       <td>'2023-05-26'</td>
-      <td>Resolved</td>
+      <td><span className="badge text-bg-success">Resolved</span></td>
     </tr>
     <tr>
       <td>52-7516</td>
       <td>balabizo</td>
       <td>Technical Issues</td>
       <td>'2023-05-25'</td>
-      <td>In Progress</td>
+      <td><span className="badge text-bg-secondary">In Progress</span></td>
     </tr>
   </tbody>
               </table>
             </div>
+            <Link href="http://localhost:3000/report" className="btn btn-primary btn-lg">Submit a new Report</Link>
            
-          <div className="position-absolute top-100 start-50 translate-middle">
-          <a href="http://localhost:3000/report" className="btn btn-primary btn-lg">Go to Report Page</a>
-          </div>
+          
+         
+         
           </div>
           
        
