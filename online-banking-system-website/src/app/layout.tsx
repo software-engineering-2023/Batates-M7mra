@@ -45,6 +45,11 @@ const sidebarLinks = [
     icon: "credit-card",
     text: "Credit Cards",
   },
+  {
+    href: "/bills",
+    icon: "cash",
+    text: "Bills",
+  },
 ];
 
 export default function RootLayout({
