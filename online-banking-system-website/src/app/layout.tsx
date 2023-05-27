@@ -7,9 +7,7 @@ import clsx from "clsx";
 import { Miriam_Libre } from "next/font/google";
 
 import "./global.scss";
-import * as bootstrap from "bootstrap";
 import React from "react";
-import { AlertsProvider } from "@/components/Toast";
 
 const spaceMono = Miriam_Libre({
   weight: "400",
@@ -34,6 +32,18 @@ const sidebarLinks = [
     href: "/transactions",
     icon: "arrow-right-square",
     text: "Transactions",
+  },
+
+  {
+    href: "/loans",
+    icon: "cash-coin",
+    text: "Loans",
+  },
+
+  {
+    href: "/credit-cards",
+    icon: "credit-card",
+    text: "Credit Cards",
   },
 ];
 
@@ -87,8 +97,7 @@ export default function RootLayout({
                       aria-current="page"
                       href={link.href}
                     >
-                      <i className={"bi me-2 bi-" + link.icon}></i>{" "}
-                      {link.text}
+                      <i className={"bi me-2 bi-" + link.icon}></i> {link.text}
                     </a>
                   </li>
                 ))}
