@@ -1,7 +1,7 @@
 export default function Report() {
     
     return(
-        <form>
+        <form className="mt-4">
         <div className="mb-3">
           <label htmlFor="reportTitle" className="form-label">Report Title</label>
           <input type="text" className="form-control" id="reportTitle" placeholder="Enter report title" />
@@ -24,8 +24,8 @@ export default function Report() {
         </div>
       
         <div className="mb-3">
-          <label htmlFor="reportAttachment" className="form-label">Attach File </label>
-          <input type="file" className="form-control-file" id="reportAttachment" />
+          <label htmlFor="reportAttachment" className="form-label"> </label>
+          <input type="file" className="form-control " id="reportAttachment" style={{width:300}}/>
         </div>
       
         <div className="d-flex justify-content-center">
