@@ -35,7 +35,7 @@ export default function Accounts() {
                     type="button"
                     className="btn btn-outline-danger btn-lg w-100"
                   >
-                    Disapprove
+                    Decline
                   </button>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function Accounts() {
                     type="button"
                     className="btn btn-outline-danger btn-lg w-100"
                   >
-                    Disapprove
+                    Decline
                   </button>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function Accounts() {
                     type="button"
                     className="btn btn-outline-danger btn-lg w-100"
                   >
-                    Disapprove
+                    Decline
                   </button>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function Accounts() {
                     type="button"
                     className="btn btn-outline-danger btn-lg w-100"
                   >
-                    Disapprove
+                    Decline
                   </button>
                 </div>
               </div>
@@ -155,7 +155,7 @@ export default function Accounts() {
                     type="button"
                     className="btn btn-outline-danger btn-lg w-100"
                   >
-                    Disapprove
+                    Decline
                   </button>
                 </div>
               </div>
@@ -185,7 +185,7 @@ export default function Accounts() {
                     type="button"
                     className="btn btn-outline-danger btn-lg w-100"
                   >
-                    Disapprove
+                    Decline
                   </button>
                 </div>
               </div>
@@ -215,7 +215,7 @@ export default function Accounts() {
                     type="button"
                     className="btn btn-outline-danger btn-lg w-100"
                   >
-                    Disapprove
+                    Decline
                   </button>
                 </div>
               </div>
@@ -245,7 +245,7 @@ export default function Accounts() {
                     type="button"
                     className="btn btn-outline-danger btn-lg w-100"
                   >
-                    Disapprove
+                    Decline
                   </button>
                 </div>
               </div>
@@ -275,7 +275,7 @@ export default function Accounts() {
                     type="button"
                     className="btn btn-outline-danger btn-lg w-100"
                   >
-                    Disapprove
+                    Decline
                   </button>
                 </div>
               </div>
@@ -305,7 +305,7 @@ export default function Accounts() {
                     type="button"
                     className="btn btn-outline-danger btn-lg w-100"
                   >
-                    Disapprove
+                    Decline
                   </button>
                 </div>
               </div>

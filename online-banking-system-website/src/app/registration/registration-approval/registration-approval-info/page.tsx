@@ -98,8 +98,8 @@ export default function Accounts() {
               </div>
               <div className="row">
                 <div className="col">
-                  <label htmlFor="counttry" className="form-label">
-                    Country
+                  <label htmlFor="country" className="form-label">
+                    Country of Residence
                   </label>
                   <input
                     type="text"
@@ -111,7 +111,7 @@ export default function Accounts() {
                 </div>
                 <div className="col">
                   <label htmlFor="city" className="form-label">
-                    City
+                    City of Residence
                   </label>
                   <input
                     type="text"
@@ -134,29 +134,41 @@ export default function Accounts() {
                   placeholder="892 Momona st."
                 />
               </div>
-              <div className="row ms-1 me-1">
-                <label htmlFor="nationalIDnumber" className="form-label">
-                  National ID Number
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="nationalIDnumber"
-                  disabled
-                  placeholder="61554673385"
-                />
-              </div>
               <div className="row">
-                <div className="input-group ">
-                  <label className="input-group-text" htmlFor="maritalStatus">
-                    Marital Status
+                <div className="col">
+                  <label htmlFor="nationality" className="form-label">
+                    Nationality
                   </label>
-                  <select className="form-select" id="maritalStatus" disabled>
-                    <option value="" disabled selected>
-                      Single
-                    </option>
-                  </select>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="nationality"
+                    disabled
+                    placeholder="American"
+                  />
                 </div>
+                <div className="col">
+                  <label htmlFor="nationalIDnumber" className="form-label">
+                    National ID Number
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="nationalIDnumber"
+                    disabled
+                    placeholder="61554673385"
+                  />
+                </div>
+              </div>
+              <label htmlFor="maritalStatus" className="form-label">
+                Marital Status
+              </label>
+              <div className="input-group">
+                <select className="form-select" id="maritalStatus" disabled>
+                  <option value="" disabled selected>
+                    Single
+                  </option>
+                </select>
               </div>
               <div className="row">
                 <div className="col">
