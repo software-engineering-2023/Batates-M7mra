@@ -42,9 +42,10 @@ export default function Report() {
   </tbody>
               </table>
             </div>
+            <div className="d-flex justify-content-center align-items-centerd mt-2">
             <Link href="http://localhost:3000/report" className="btn btn-primary btn-lg">Submit a new Report</Link>
            
-          
+            </div>
          
          
           </div>
