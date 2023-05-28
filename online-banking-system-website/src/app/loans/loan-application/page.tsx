@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="row h-100 d-flex justify-content-center align-items-center">
       <div className="col-xl-8 col-lg-10 col-md-12">
-        <div className="card bg-body-tertiary">
+        <div className="card">
           <div className="card-body">
             <h1 className="card-title">Loan Application Form</h1>
             <form className="d-flex flex-column gap-3">
@@ -19,7 +19,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="col"> 
+                <div className="col">
                   <div className="">
                     <label htmlFor="annualIncome" className="form-label">
                       Annual Income ($)
