@@ -50,6 +50,12 @@ const sidebarLinks = [
     icon: "cash",
     text: "Bills",
   },
+  {
+    href: "/remainders",
+    icon: "cash",
+    text: "Remainders",
+  },
+
 ];
 
 export default function RootLayout({
