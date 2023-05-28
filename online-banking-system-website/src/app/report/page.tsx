@@ -19,6 +19,7 @@ export default function Report() {
             <option>Technical Issues</option>
             <option>Account Inquiries</option>
             <option>Fraudulent Activity</option>
+            <option>Card Issues</option>
             <option>Other</option>
           </select>
         </div>
