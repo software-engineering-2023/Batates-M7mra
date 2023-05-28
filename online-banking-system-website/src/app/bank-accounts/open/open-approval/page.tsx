@@ -6,7 +6,7 @@ export default function Accounts() {
       <div className="col-xl-12 col-lg-12 col-md-12">
         <div className="card">
           <div className="card-body">
-            <h1 className="card-title">Pending Registration Approvals</h1>
+            <h1 className="card-title">Pending Bank Account Approvals</h1>
             <form className="d-flex flex-column gap-3">
               <div className="row d-flex justify-content-center fs-3 mb-3 mt-5">
                 McLovin Doe
@@ -21,7 +21,7 @@ export default function Accounts() {
                   </button>
                 </div>
                 <div className="col">
-                  <Link href="/registration/registration-approval/registration-approval-info">
+                  <Link href="/bank-accounts/open/open-approval/open-approval-info">
                     <button
                       type="button"
                       className="btn btn-outline-primary btn-lg w-100"

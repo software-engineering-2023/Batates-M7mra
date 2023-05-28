@@ -54,6 +54,17 @@ const sidebarLinks = [
     href: "/contact-us",
     icon: "telephone",
     text: "Contact Us",
+  },
+  {
+    href: "/remainders",
+    icon: "cash",
+    text: "Remainders",
+  },
+
+  {
+    href: "/transfers",
+    icon: "arrow-left-right",
+    text: "Bank Transfers"
   }
 ];
 
