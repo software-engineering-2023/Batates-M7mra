@@ -4,7 +4,7 @@ export default function Accounts() {
       <div className="col-xl-8 col-lg-10 col-md-12">
         <div className="card">
           <div className="card-body">
-            <h1 className="card-title">Registrant Info</h1>
+            <h1 className="card-title">Bank Account Applicant Info</h1>
             <form className="d-flex flex-column gap-3">
               <div className="row">
                 <div className="col">
@@ -58,20 +58,6 @@ export default function Accounts() {
                   />
                 </div>
                 <div className="col">
-                  <label htmlFor="password" className="form-label">
-                    Password
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="password"
-                    disabled
-                    placeholder="********"
-                  />
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
                   <label htmlFor="phoneNumber" className="form-label">
                     Phone Number
                   </label>
@@ -82,6 +68,20 @@ export default function Accounts() {
                     disabled
                     placeholder="14787441440"
                   />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <label htmlFor="Currency" className="form-label">
+                    Currency
+                  </label>
+                  <div className="input-group">
+                    <select className="form-select" id="Currency" disabled>
+                      <option value="" disabled selected>
+                        USD
+                      </option>
+                    </select>
+                  </div>
                 </div>
                 <div className="col">
                   <label htmlFor="dateOfBrith" className="form-label">
@@ -204,6 +204,12 @@ export default function Accounts() {
                   <img src="/back.jpg" width={381}></img>
                 </div>
               </div>
+              <div className="row d-flex justify-content-center">
+                <label htmlFor="front" className="form-label">
+                  Signature Photo
+                </label>
+                <img src="/signature.png" width={381}></img>
+              </div>
               <div className="row">
                 <div className="col">
                   <label htmlFor="currentEmployer" className="form-label">
@@ -229,17 +235,6 @@ export default function Accounts() {
                     placeholder="Organ Donor"
                   />
                 </div>
-              </div>
-              <div className="row ms-1 me-1">
-                <label htmlFor="accountNumber" className="form-label">
-                  Account Number (Only if You Have an Account in the Bank)
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="accountNumber"
-                  placeholder="100098706540320"
-                />
               </div>
               <h4>Terms and Conditions</h4>
               <div className="form-check">
