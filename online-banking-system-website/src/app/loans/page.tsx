@@ -86,7 +86,7 @@ export default function Home() {
     </div>
     <div>
       <div>
-        <div className="card">
+        <div className="card mt-3 ms-2 me-2">
       <div className="row">
         <div className="col-md-6 mx-auto calculate-form">
           <div className="card card-body text-center mt-5">

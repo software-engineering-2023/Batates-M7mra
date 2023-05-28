@@ -50,6 +50,11 @@ const sidebarLinks = [
     icon: "cash",
     text: "Bills",
   },
+  {
+    href: "/contact-us",
+    icon: "telephone",
+    text: "Contact Us",
+  }
 ];
 
 export default function RootLayout({
