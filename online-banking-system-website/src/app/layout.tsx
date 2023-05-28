@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import clsx from "clsx";
 import { Miriam_Libre } from "next/font/google";
 
 import "./global.scss";
+import React from "react";
 
 const spaceMono = Miriam_Libre({
   weight: "400",
@@ -32,6 +33,7 @@ const sidebarLinks = [
     icon: "arrow-right-square",
     text: "Transactions",
   },
+
   {
     href: "/loans",
     icon: "cash-coin",
@@ -42,6 +44,11 @@ const sidebarLinks = [
     href: "/credit-cards",
     icon: "credit-card",
     text: "Credit Cards",
+  },
+  {
+    href: "/bills",
+    icon: "cash",
+    text: "Bills",
   },
 ];
 
@@ -63,6 +70,7 @@ export default function RootLayout({
         <title>Online Banking System</title>
       </head>
       <body data-bs-theme="dark">
+        {/* <AlertsProvider> */}
         <nav className="navbar navbar-expand-lg bg-body-tertiary d-block d-md-none fixed-top">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
@@ -84,8 +92,8 @@ export default function RootLayout({
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                {sidebarLinks.map((link) => (
-                  <li className="nav-item">
+                {sidebarLinks.map((link, i) => (
+                  <li className="nav-item" key={i}>
                     <a
                       className={clsx(
                         "nav-link",
@@ -117,8 +125,8 @@ export default function RootLayout({
                 <span className="fs-1">Bankaak</span>
               </Link>
               <ul className="nav nav-pills flex-column my-auto">
-                {sidebarLinks.map((link) => (
-                  <li className="nav-item" key={link.href}>
+                {sidebarLinks.map((link, i) => (
+                  <li className="nav-item" key={i}>
                     <Link
                       className={clsx(
                         "nav-link py-4 link-body-emphasis",
@@ -148,6 +156,7 @@ export default function RootLayout({
             <div className="col py-4">{children}</div>
           </div>
         </div>
+        {/* </AlertsProvider> */}
       </body>
     </html>
   );

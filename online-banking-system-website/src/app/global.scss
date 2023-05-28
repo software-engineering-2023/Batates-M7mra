@@ -7,13 +7,19 @@ $dark-text-emphasis: #fff;
 $card-color: #fff;
 
 $primary: #c523bd;
-$secondary: #AD84A7;
-$light: #E2E0F4;
+$secondary: #646e76;
+$light: #e2e0f4;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
 
 $input-border-radius: 15px;
 $input-border-width: 3px;
 $input-bg: rgba(255, 255, 255, 0.1);
 $input-padding-y: 0.75rem;
+
+$btn-primary-bg: #c523bd;
 
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
@@ -24,41 +30,57 @@ $input-padding-y: 0.75rem;
 
 #sidebar {
   box-shadow: 0 0 1rem rgba(#fff, 0.1);
+  backdrop-filter: blur(30px);
 }
 
 .card {
   border-radius: 15px;
-  box-shadow: 0 0 1rem rgba(#fff, 0.1);
+  box-shadow: 0 0 1rem rgba(#fff, 0.05);
 }
 
 .credit-card {
-  background-image: linear-gradient(
-    to right,
-    $secondary 0%,
-    lighten($secondary, 5%) 51%,
-    $secondary 100%
-  );
-  width: 30em;
-  height: 20em;
+  background-image: linear-gradient(to right, #000 0%, #1a1a1a 51%, #000 100%);
+  width: 27em;
+  height: 19em;
+  border: 0;
   border-radius: 1em;
   transform: rotateZ(0deg);
   margin: auto;
   transition: 0.5s;
   background-size: 200% auto;
-
-  .card-number {
-    color: white;
-    padding: 8em 0 0 2em;
-    font-size: 1.5em;
-  }
-
-  .card-date {
-    color: white;
-    padding: 1em 0 0 3em;
-    font-size: 1em;
-  }
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .credit-card:hover {
   background-position: right center; /* change the direction of the change here */
+}
+
+#toast-container {
+  z-index: 9999;
+}
+
+.toast.bg-success {
+  background-color: rgba($success, 0.2);
+  backdrop-filter: blur(30px);
+}
+
+.toast.bg-danger {
+  background-color: rgba($danger, 0.2);
+  backdrop-filter: blur(30px);
+}
+
+.toast.bg-info {
+  background-color: rgba($info, 0.8);
+  backdrop-filter: blur(30px);
+}
+
+.toast.bg-warning {
+  background-color: rgba($warning, 0.8);
+  backdrop-filter: blur(30px);
+}
+
+.toast.bg-light {
+  background-color: rgba($light, 0.8);
+  backdrop-filter: blur(30px);
 }
