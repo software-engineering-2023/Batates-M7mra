@@ -56,6 +56,11 @@ const sidebarLinks = [
     text: "Remainders",
   },
 
+  {
+    href: "/transfers",
+    icon: "arrow-left-right",
+    text: "Bank Transfers"
+  }
 ];
 
 export default function RootLayout({
