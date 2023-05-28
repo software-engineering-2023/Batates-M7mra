@@ -50,6 +50,17 @@ const sidebarLinks = [
     icon: "cash",
     text: "Bills",
   },
+  {
+    href: "/remainders",
+    icon: "cash",
+    text: "Remainders",
+  },
+
+  {
+    href: "/transfers",
+    icon: "arrow-left-right",
+    text: "Bank Transfers"
+  }
 ];
 
 export default function RootLayout({

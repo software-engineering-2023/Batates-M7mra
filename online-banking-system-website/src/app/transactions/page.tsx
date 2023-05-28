@@ -72,7 +72,7 @@ export default function Home() {
   return (
     <div>
       <Line options={options} data={data} />
-      <table className="table table-striped table-hover table-dark">
+      <table className="table table-striped table-hover table-dark table-responsive">
         <thead>
           <tr>
             <th scope="col" className="fs-3">#</th>
