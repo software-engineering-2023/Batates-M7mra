@@ -170,9 +170,9 @@ export default function RootLayout({
           {showSidebar && (
             <nav className="navbar navbar-expand-lg bg-body-tertiary d-block d-md-none fixed-top">
               <div className="container-fluid">
-                <a className="navbar-brand" href="#">
-                  Nextech
-                </a>
+                <Link className="navbar-brand" href="/">
+                  <img src="/logo.png" alt="logo" width={50} height={25} />
+                </Link>
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -237,9 +237,16 @@ export default function RootLayout({
                       >
                         <Link
                           href="/"
-                          className="d-flex align-items-center text-decoration-none link-body-emphasis"
+                          className="mt-5 d-flex align-items-center text-decoration-none link-body-emphasis justify-content-center"
                         >
-                          <span className="fs-1">Nextech</span>
+                          <Link className="navbar-brand" href="/">
+                            <img
+                              src="/logo.png"
+                              alt="logo"
+                              width={140}
+                              height={70}
+                            />
+                          </Link>{" "}
                         </Link>
                         <ul className="nav nav-pills flex-column my-auto">
                           {sidebarLinks
@@ -266,7 +273,7 @@ export default function RootLayout({
                         </ul>
                         <div className="d-flex justify-content-start align-items-center gap-3 border-top pt-4">
                           <img
-                            src="/ahmed-mohsen.png"
+                            src="/ahmed-mohsen.jpg"
                             height={45}
                             width={45}
                             className="rounded-circle"
