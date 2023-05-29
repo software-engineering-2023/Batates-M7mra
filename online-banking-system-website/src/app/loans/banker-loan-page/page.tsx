@@ -13,8 +13,8 @@ export default function Loans() {
     }, 2000);
   };
   const onClickDeclined = () => {
-    setShowApproval(true);
-    setShowDeclination(false);
+    setShowApproval(false);
+    setShowDeclination(true);
     setTimeout(() => {
       setShowDeclination(false);
     }, 2000);
