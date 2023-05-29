@@ -28,7 +28,7 @@ export default function BankAnnouncement() {
               process.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-              <Link href="/report/banker" className="btn btn-primary me-md-2">
+              <Link href="/" className="btn btn-primary me-md-2">
                 Back
               </Link>
             </div>

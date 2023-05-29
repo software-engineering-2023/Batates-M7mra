@@ -111,6 +111,12 @@ const sidebarLinks: SidebarLink[] = [
     text: "Account Open Requests",
     userTypes: [UserType.BANKER],
   },
+  {
+    href: "/loans/banker-loan-page",
+    icon: "bi bi-plus",
+    text: "Loan Requests",
+    userTypes: [UserType.BANKER],
+  },
 ];
 
 interface NavbarContext {

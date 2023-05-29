@@ -14,10 +14,68 @@ export default function Home() {
 
   return (
     <div className="container">
-      <div className="row">
+      <div className="row g-2">
         {user?.type == UserType.CLIENT && (
           <>
-            <div className="col-8 d-flex flex-column gap-3">
+            <div className="col-xl-8 col-md-12 d-flex flex-column gap-3">
+              <div className="card">
+                <div className="card-header">
+                  <i className="bi bi-bell"></i> Announcements
+                </div>
+                <div
+                  className="list-group list-group-flush"
+                  style={{ borderRadius: 20 }}
+                >
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">Maintenance</div>A scheduled
+                      maintenance on our online banking system on{" "}
+                    </div>
+                    <small>
+                      2 hours ago <i className="bi bi-envelope-fill ms-2"></i>
+                    </small>
+                  </a>
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">Ahmed Gomaa</div>
+                      meen ahmed gomaa da?
+                    </div>
+                    <small>
+                      3 days ago <i className="bi bi-envelope-open-fill"></i>
+                    </small>
+                  </a>
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">New Bank Interest Rate</div>
+                      We are excited to inform you that starting from next month
+                    </div>
+                    <small>
+                      21 days ago <i className="bi bi-envelope-open-fill"></i>
+                    </small>
+                  </a>
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">Report 6401 Resolved</div>
+                      Your report has been solved succesfully review now !
+                    </div>
+                    <small>
+                      3 days ago <i className="bi bi-envelope-open-fill"></i>
+                    </small>
+                  </a>
+                </div>
+              </div>
               <div className="card">
                 <div className="card-body">
                   <div className="d-flex flex-column gap-2">
@@ -168,8 +226,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-4">
-              <div className="card">
+            <div className="col-xl-4 col-lg-12">
+              <div className="card mb-3">
                 <div className="card-header">Reminders</div>
                 <ul
                   className="list-group list-group-flush"
@@ -189,7 +247,10 @@ export default function Home() {
                     <div className="d-flex justify-content-evenly flex-column text-left ms-auto align-items-end">
                       <small className="text-body-secondary">Tomorrow</small>
                       <div>
-                        <Link className="btn btn-primary" href="/bills/payment-form">
+                        <Link
+                          className="btn btn-primary"
+                          href="/bills/payment-form"
+                        >
                           Pay
                         </Link>
                       </div>
@@ -209,7 +270,10 @@ export default function Home() {
                     <div className="d-flex justify-content-evenly align-items-end flex-column text-left ms-auto align-items-end">
                       <small className="text-body-secondary">Next Week</small>
                       <div>
-                        <Link className="btn btn-primary" href="/bills/payment-form">
+                        <Link
+                          className="btn btn-primary"
+                          href="/bills/payment-form"
+                        >
                           Pay
                         </Link>
                       </div>
@@ -231,7 +295,10 @@ export default function Home() {
                         1, July 2023
                       </small>
                       <div>
-                        <Link className="btn btn-primary" href="/bills/payment-form">
+                        <Link
+                          className="btn btn-primary"
+                          href="/bills/payment-form"
+                        >
                           Pay
                         </Link>
                       </div>
@@ -245,8 +312,8 @@ export default function Home() {
                       <i className={"bi bi-credit-card"}></i>
                     </div>
                     <div className="d-flex justify-content-center  flex-column ">
-                      <div>CreditCard Payment</div>
-                      <div> 500$ </div>
+                      <div>Credit Card Payment</div>
+                      <div>$500</div>
                     </div>
                     <div className="d-flex justify-content-evenly flex-column text-left ms-auto align-items-end">
                       <small className="text-body-secondary">
@@ -254,7 +321,10 @@ export default function Home() {
                         Due in 6 days
                       </small>
                       <div>
-                        <Link className="btn btn-primary" href="/bills/payment-form">
+                        <Link
+                          className="btn btn-primary"
+                          href="/bills/payment-form"
+                        >
                           Pay
                         </Link>
                       </div>
@@ -269,18 +339,79 @@ export default function Home() {
                     </div>
                     <div className="d-flex justify-content-center  flex-column ">
                       <div>Electricity Bill</div>
-                      <div> 300$ </div>
+                      <div>$300</div>
                     </div>
                     <div className="d-flex justify-content-evenly flex-column text-left ms-auto align-items-end">
                       <small className="text-body-secondary">Tomorrow</small>
                       <div>
-                        <Link className="btn btn-primary" href="/bills/payment-form">
+                        <Link
+                          className="btn btn-primary"
+                          href="/bills/payment-form"
+                        >
                           Pay
                         </Link>
                       </div>
                     </div>
                   </li>
                 </ul>
+              </div>
+              <div className="card">
+                <div className="card-header">
+                  <i className="bi bi-flag me-2"></i>
+                  Track Your Reports
+                </div>
+                <div
+                  className="list-group list-group-flush"
+                  style={{ borderRadius: 20 }}
+                >
+                  <a
+                    href="/report/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold d-flex justify-content-between">
+                        Stolen Card
+                        <small>
+                          3 minutes ago{" "}
+                          <i className="bi bi-envelope-open-fill"></i>
+                        </small>
+                      </div>
+                      We have caught el 7aramy go check who is the theft!
+                    </div>
+                  </a>
+                  <a
+                    href="/report/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold d-flex justify-content-between">
+                        Website freeze
+                        <small>
+                          2 hours ago
+                          <i className="bi bi-envelope-fill ms-2"></i>
+                        </small>
+                      </div>
+                      A scheduled maintenance on our online banking system on{" "}
+                      <strong>June 15th, 2023</strong> to solve this problem
+                    </div>
+                  </a>
+
+                  <a
+                    href="/report/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold d-flex justify-content-between">
+                        Report 6401 Resolved
+                        <small>
+                          3 days ago{" "}
+                          <i className="bi bi-envelope-open-fill"></i>
+                        </small>
+                      </div>
+                      Your report has been solved succesfully review now !
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </>
@@ -369,7 +500,8 @@ export default function Home() {
                           }, 3000);
                         }}
                       >
-                        <i className="bi bi-cloud-download me-3"></i> Backup System
+                        <i className="bi bi-cloud-download me-3"></i> Backup
+                        System
                       </button>
                     </div>
                     <div className="col">
