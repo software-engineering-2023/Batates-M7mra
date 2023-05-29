@@ -113,6 +113,8 @@ export default function CreditCards() {
   const [paymentAmount, setPaymentAmount] = useState("full");
   const [useDefaultAccount, setUseDefaultAccount] = useState(true);
   const [showSuspendAlert, setShowSuspendAlert] = useState(false);
+  const [showLostAlert, setLostAlert] = useState(false);
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -144,28 +146,35 @@ export default function CreditCards() {
                 </button>
               </div>
             </div>
-            {showPaymentAlert && (
-              <div className="alert alert-success">
-                <i className="bi bi-check-circle-fill me-2"></i> Paid
-                successfully!
-              </div>
-            )}
-            {showSuspendAlert && (
-              <div className="alert alert-success">
-                <i className="bi bi-check-circle-fill me-2"></i>
-                Card suspended successfully!
-              </div>
-            )}
-
-            {showCashbackAlert && (
-              <div className="alert alert-success">
-                <i className="bi bi-check-circle-fill me-2"></i>
-                Cashback redeemed successfully!
-              </div>
-            )}
 
             <div className="row">
               <div className="col-md-12 mx-auto col-lg-9">
+                {showPaymentAlert && (
+                  <div className="alert alert-success">
+                    <i className="bi bi-check-circle-fill me-2"></i> Paid
+                    successfully!
+                  </div>
+                )}
+                {showSuspendAlert && (
+                  <div className="alert alert-success">
+                    <i className="bi bi-check-circle-fill me-2"></i>
+                    Card suspended successfully!
+                  </div>
+                )}
+
+                {showCashbackAlert && (
+                  <div className="alert alert-success">
+                    <i className="bi bi-check-circle-fill me-2"></i>
+                    Cashback redeemed successfully!
+                  </div>
+                )}
+
+                {showLostAlert && (
+                  <div className="alert alert-success">
+                    <i className="bi bi-check-circle-fill me-2"></i>
+                    Card reported lost or stolen successfully!
+                  </div>
+                )}
                 <div className="row row-cols-xl-2 row-cols-lg-1 g-2">
                   {creditCards.map((creditCard, i) => (
                     <div className="col" key={i}>
@@ -352,10 +361,117 @@ export default function CreditCards() {
                                   </button>
                                 </div>
                                 <div className="col-lg-6">
-                                  <button className="btn btn-warning  w-100">
+                                  <button
+                                    className="btn btn-warning  w-100"
+                                    data-bs-target="#lostModal"
+                                    data-bs-toggle="modal"
+                                  >
                                     <i className="bi bi-exclamation-circle me-2"></i>
                                     Report lost or stolen
                                   </button>
+
+                                  <div
+                                    className="modal fade"
+                                    id="lostModal"
+                                    tabIndex={-1}
+                                    aria-labelledby="lostModalLabel"
+                                    aria-hidden="true"
+                                  >
+                                    <div className="modal-dialog">
+                                      <div className="modal-content">
+                                        <div className="modal-header">
+                                          <h1
+                                            className="modal-title fs-5"
+                                            id="lostModalLabel"
+                                          >
+                                            Report lost or stolen
+                                          </h1>
+                                          <button
+                                            type="button"
+                                            className="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                          ></button>
+                                        </div>
+                                        <form className="modal-body">
+                                          <div className="d-flex flex-column gap-3">
+                                            <div className="form-check">
+                                              <input
+                                                className="form-check-input"
+                                                type="radio"
+                                                name="flexRadioDefault"
+                                                id="flexRadioDefault1"
+                                              />
+                                              <label
+                                                className="form-check-label"
+                                                htmlFor="flexRadioDefault1"
+                                              >
+                                                Lost
+                                              </label>
+                                            </div>
+                                            <div className="form-check">
+                                              <input
+                                                className="form-check-input"
+                                                type="radio"
+                                                name="flexRadioDefault"
+                                                id="flexRadioDefault1"
+                                              />
+                                              <label
+                                                className="form-check-label"
+                                                htmlFor="flexRadioDefault1"
+                                              >
+                                                Stolen
+                                              </label>
+                                            </div>
+
+                                            <textarea
+                                              className="form-control"
+                                              placeholder="Details ..."
+                                              rows={5}
+                                            />
+
+                                            <div className="form-check form-switch">
+                                              <input
+                                                className="form-check-input"
+                                                type="checkbox"
+                                                role="switch"
+                                                id="flexSwitchCheckDefault"
+                                              />
+                                              <label
+                                                className="form-check-label"
+                                                htmlFor="flexSwitchCheckDefault"
+                                              >
+                                                Apply for replacement?
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </form>
+                                        <div className="modal-footer">
+                                          <button
+                                            type="button"
+                                            className="btn btn-secondary"
+                                            data-bs-dismiss="modal"
+                                          >
+                                            Close
+                                          </button>
+                                          <button
+                                            type="button"
+                                            className="btn btn-primary"
+                                            data-bs-dismiss="modal"
+                                            onClick={() => {
+                                              setLostAlert(true);
+
+                                              setTimeout(() => {
+                                                setLostAlert(false);
+                                              }, 3000);
+                                            }}
+                                          >
+                                            Pay
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
 
