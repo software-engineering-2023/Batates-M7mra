@@ -24,6 +24,9 @@ export default function Accounts() {
               Currency
             </th>
             <th scope="col" className="fs-3">
+              Account Type
+            </th>
+            <th scope="col" className="fs-3">
               Applicant Info
             </th>
           </tr>
@@ -35,6 +38,7 @@ export default function Accounts() {
             <td>42</td>
             <td>Male</td>
             <td>USD</td>
+            <td>Savings</td>
             <td>
               <Link href="/bank-accounts/open/open-approval/open-approval-info">
                 <button type="button" className="btn btn-secondary btn-sm w-50">
@@ -49,6 +53,7 @@ export default function Accounts() {
             <td>33</td>
             <td>Male</td>
             <td>EUR</td>
+            <td>Checking</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -61,6 +66,7 @@ export default function Accounts() {
             <td>25</td>
             <td>Female</td>
             <td>EGP</td>
+            <td>Savings</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -73,6 +79,7 @@ export default function Accounts() {
             <td>22</td>
             <td>Male</td>
             <td>GBP</td>
+            <td>Checking</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -85,6 +92,7 @@ export default function Accounts() {
             <td>18</td>
             <td>Female</td>
             <td>MXN</td>
+            <td>Savings</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -97,6 +105,7 @@ export default function Accounts() {
             <td>21</td>
             <td>Female</td>
             <td>AUD</td>
+            <td>Checking</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -109,6 +118,7 @@ export default function Accounts() {
             <td>50</td>
             <td>Female</td>
             <td>CAD</td>
+            <td>Savings</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -121,6 +131,7 @@ export default function Accounts() {
             <td>52</td>
             <td>Female</td>
             <td>JPY</td>
+            <td>Checking</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -133,6 +144,7 @@ export default function Accounts() {
             <td>25</td>
             <td>Male</td>
             <td>CNY</td>
+            <td>Savings</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -145,6 +157,7 @@ export default function Accounts() {
             <td>40</td>
             <td>Male</td>
             <td>INR</td>
+            <td>Checking</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View

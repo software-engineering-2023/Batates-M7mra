@@ -26,6 +26,18 @@ export default function Accounts() {
           <div className="card-body">
             <h1 className="card-title">Bank Account Applicant Info</h1>
             <form className="d-flex flex-column gap-3">
+              <div className="row ms-1 me-1">
+                <label htmlFor="accountType" className="form-label">
+                  Account Type
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="accountType"
+                  disabled
+                  placeholder="Savings"
+                />
+              </div>
               <div className="row">
                 <div className="col">
                   <label htmlFor="firstName" className="form-label">

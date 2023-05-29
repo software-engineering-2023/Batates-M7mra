@@ -47,14 +47,15 @@ export default function BankAccounts() {
     <div className="container">
       <div className="row mb-3">
         <div className="col">
-          <Link
+          <button
             className="btn btn-primary btn-lg d-flex align-items-center justify-content-center w-25 mx-auto"
-            href="/bank-accounts/open"
             style={{ height: 75 }}
+            data-bs-toggle="modal"
+            data-bs-target="#open"
           >
             <i className="bi bi-plus-lg me-2"></i>
             Open account
-          </Link>
+          </button>
         </div>
       </div>
 
@@ -174,7 +175,7 @@ export default function BankAccounts() {
                 className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
-                Close
+                Cancel
               </button>
               <button
                 type="button"
@@ -189,6 +190,49 @@ export default function BankAccounts() {
               >
                 Close
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal fade"
+        id="open"
+        tabIndex={-1}
+        aria-labelledby="modal"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="modal">
+                Choose Account Type
+              </h1>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="input-group d-flex justify-content-center p-3">
+              <select className="form-select" id="accountType" required>
+                <option value="" disabled selected>
+                  Select your option
+                </option>
+                <option value="1">Savings</option>
+                <option value="2">Checking</option>
+              </select>
+            </div>
+            <div className="modal-footer">
+              <Link href="/bank-accounts/open">
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Continue
+                </button>
+              </Link>
             </div>
           </div>
         </div>

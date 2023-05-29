@@ -136,7 +136,7 @@ export default function CreditCards() {
                 <Link
                   className="btn btn-primary d-flex align-items-center justify-content-center mx-auto"
                   style={{ height: 75 }}
-                  href="/credit-cards/apply"
+                  href="/credit-cards/open"
                 >
                   <i className="bi bi-plus-circle me-2"></i>
                   Apply for a credit card
