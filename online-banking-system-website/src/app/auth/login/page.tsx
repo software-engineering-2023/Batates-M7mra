@@ -1,22 +1,9 @@
 "use client";
 
 import { GlobalStateContext } from "@/app/layout";
+import { User, UserType } from "@/types";
 import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
-
-export enum UserType {
-  CLIENT = "Client",
-  BANKER = "Banker",
-  ADMIN = "Admin",
-}
-
-export interface User {
-  name: string;
-  email: string;
-  username: string;
-  type: UserType;
-  password: string;
-}
 
 const users: User[] = [
   {
