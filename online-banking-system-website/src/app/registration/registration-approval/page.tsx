@@ -32,7 +32,7 @@ export default function Accounts() {
             <td>Male</td>
             <td>
               <Link href="/registration/registration-approval/registration-approval-info">
-                <button type="button" className="btn btn-primary btn-sm w-50">
+                <button type="button" className="btn btn-secondary btn-sm w-50">
                   View
                 </button>
               </Link>
@@ -44,7 +44,7 @@ export default function Accounts() {
             <td>33</td>
             <td>Male</td>
             <td>
-              <button type="button" className="btn btn-primary btn-sm w-50">
+              <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
               </button>
             </td>
@@ -55,7 +55,7 @@ export default function Accounts() {
             <td>25</td>
             <td>Female</td>
             <td>
-              <button type="button" className="btn btn-primary btn-sm w-50">
+              <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
               </button>
             </td>
@@ -66,7 +66,7 @@ export default function Accounts() {
             <td>22</td>
             <td>Male</td>
             <td>
-              <button type="button" className="btn btn-primary btn-sm w-50">
+              <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
               </button>
             </td>
@@ -77,7 +77,7 @@ export default function Accounts() {
             <td>18</td>
             <td>Female</td>
             <td>
-              <button type="button" className="btn btn-primary btn-sm w-50">
+              <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
               </button>
             </td>
@@ -88,7 +88,7 @@ export default function Accounts() {
             <td>21</td>
             <td>Female</td>
             <td>
-              <button type="button" className="btn btn-primary btn-sm w-50">
+              <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
               </button>
             </td>
@@ -99,7 +99,7 @@ export default function Accounts() {
             <td>50</td>
             <td>Female</td>
             <td>
-              <button type="button" className="btn btn-primary btn-sm w-50">
+              <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
               </button>
             </td>
@@ -110,7 +110,7 @@ export default function Accounts() {
             <td>52</td>
             <td>Female</td>
             <td>
-              <button type="button" className="btn btn-primary btn-sm w-50">
+              <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
               </button>
             </td>
@@ -121,7 +121,7 @@ export default function Accounts() {
             <td>25</td>
             <td>Male</td>
             <td>
-              <button type="button" className="btn btn-primary btn-sm w-50">
+              <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
               </button>
             </td>
@@ -132,7 +132,7 @@ export default function Accounts() {
             <td>40</td>
             <td>Male</td>
             <td>
-              <button type="button" className="btn btn-primary btn-sm w-50">
+              <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
               </button>
             </td>
