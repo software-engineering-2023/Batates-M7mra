@@ -29,7 +29,7 @@ export default function Home() {
     setRemainingTimes(updatedRemainingTimes);
 
 
-  });
+  }, []);
 
   return (
     <div>
