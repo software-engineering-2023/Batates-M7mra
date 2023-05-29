@@ -21,7 +21,7 @@ export default function contact() {
             action="mail.php"
             method="POST"
           >
-            <div className="row">
+            <div className="row mb-3">
               <div className="col-md-6">
                 <div className="md-form mb-0">
                   <input
@@ -29,10 +29,8 @@ export default function contact() {
                     id="name"
                     name="name"
                     className="form-control"
+                    placeholder="Name"
                   />
-                  <label htmlFor="name" className="">
-                    Your name
-                  </label>
                 </div>
               </div>
 
@@ -43,15 +41,13 @@ export default function contact() {
                     id="email"
                     name="email"
                     className="form-control"
+                    placeholder="E-mail"
                   />
-                  <label htmlFor="email" className="mb-3">
-                    Your email
-                  </label>
                 </div>
               </div>
             </div>
 
-            <div className="row">
+            <div className="row mb-3">
               <div className="col-md-12">
                 <div className="md-form mb-0">
                   <input
@@ -59,23 +55,21 @@ export default function contact() {
                     id="subject"
                     name="subject"
                     className="form-control"
+                    placeholder="Subject"
                   />
-                  <label htmlFor="subject" className="mb-3">
-                    Subject
-                  </label>
                 </div>
               </div>
             </div>
 
-            <div className="row">
+            <div className="row mb-3">
               <div className="col-md-12">
                 <div className="md-form">
                   <textarea
                     id="message"
                     name="message"
                     className="form-control md-textarea"
+                    placeholder="Your Message"
                   ></textarea>
-                  <label htmlFor="message">Your message</label>
                 </div>
               </div>
             </div>

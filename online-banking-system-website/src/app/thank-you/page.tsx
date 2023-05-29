@@ -24,17 +24,17 @@ export default function Home() {
       </div>
       <div>
       <div className="row mt-5 mb-5"></div>
-        <div className="card">
+        <div className="card bg-body-tertiary">
         <div className="row mt-3 mb-1"></div>
         <section>
-          <h3 className="text-center mb-4 pb-2 text-warning fw-bold">FAQ</h3>
+          <h3 className="text-center mb-4 pb-2 text-primary fw-bold">FAQ</h3>
           <p className="text-center mb-5">
             Find the answers for the most frequently asked questions below
           </p>
-
+``        <div className="container mx-auto" style={{ width : "90%"}}>
           <div className="row ms-2">
             <div className="col-md-6 col-lg-4 mb-4">
-              <h6 className="mb-3 text-warning">
+              <h6 className="mb-3 text-primary">
                 <i className="far fa-paper-plane text-primary pe-1"></i>
                 Is this a real bank?
               </h6>
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
 
             <div className="col-md-6 col-lg-4 mb-4">
-              <h6 className="mb-3 text-warning">
+              <h6 className="mb-3 text-primary">
                 <i className="fas fa-pen-alt text-primary pe-2"></i> A question
                 that is longer then the previous one?
               </h6>
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
 
             <div className="col-md-6 col-lg-4 mb-4">
-              <h6 className="mb-3 text-warning">
+              <h6 className="mb-3 text-primary">
                 <i className="fas fa-user text-primary pe-2"></i> 
                 Do we offer special promotions to clients?
               </h6>
@@ -70,7 +70,7 @@ export default function Home() {
             </div>
 
             <div className="col-md-6 col-lg-4 mb-4">
-              <h6 className="mb-3 text-warning">
+              <h6 className="mb-3 text-primary">
                 <i className="fas fa-rocket text-primary pe-2"></i> 
                 Can i calculate the monthly payment of a loan?
               </h6>
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
 
             <div className="col-md-6 col-lg-4 mb-4">
-              <h6 className="mb-3 text-warning">
+              <h6 className="mb-3 text-primary">
                 <i className="fas fa-home text-primary pe-2"></i> 
                 who's the best member on this team?
               </h6>
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
 
             <div className="col-md-6 col-lg-4 mb-4">
-              <h6 className="mb-3 text-warning">
+              <h6 className="mb-3 text-primary">
                 <i className="fas fa-book-open text-primary pe-2"></i>
                 Cereal before milk or milk before cereal?
               </h6>
@@ -102,6 +102,7 @@ export default function Home() {
                 Cereal first, obviously.
               </p>
             </div>
+          </div>
           </div>
         </section>
       </div>

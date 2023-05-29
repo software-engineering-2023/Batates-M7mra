@@ -127,8 +127,8 @@ export default function Home() {
             <th scope="row">5</th>
             <td>21/3/2022</td>
             <td><span className="badge rounded-pill text-bg-danger">- $3300</span></td>
-            <td>Bill</td>
-            <td>GASTEC</td>
+            <td>Credit Debt Payment</td>
+            <td>----</td>
           </tr>
           <tr>
             <th scope="row">6</th>
@@ -176,8 +176,8 @@ export default function Home() {
             <th scope="row">12</th>
             <td>11/7/2022</td>
             <td><span className="badge rounded-pill text-bg-danger">- $700</span></td>
-            <td>Outgoing Transfer</td>
-            <td>GUC</td>
+            <td>Credit Debt Payment</td>
+            <td>----</td>
           </tr>
           <tr>
             <th scope="row">13</th>
@@ -240,6 +240,7 @@ export default function Home() {
       <div className="d-flex justify-content-center">
       <Link className="btn btn-warning btn-md" href="/credit-card-transactions">View Credit Card Transactions</Link>
     </div>
+    <p>&copy; 2023 - btatesM7amara.com</p>
     </div>
   );
 }

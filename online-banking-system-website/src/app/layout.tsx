@@ -69,6 +69,12 @@ const sidebarLinks: SidebarLink[] = [
     text: "Contact Us",
     userTypes: [UserType.CLIENT],
   },
+  {
+    href: "/loans/banker-loan-page",
+    icon: "cash-coin",
+    text: "Loan Requests",
+    userTypes: [UserType.BANKER],
+  },
 ];
 
 interface NavbarContext {
