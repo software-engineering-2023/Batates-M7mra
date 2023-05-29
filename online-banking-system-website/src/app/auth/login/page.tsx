@@ -23,6 +23,22 @@ const users: User[] = [
   },
 
   {
+    name: "Ahmed Gomaa",
+    email: "who@student.guc.edu.eg",
+    username: "who",
+    type: UserType.CLIENT,
+    password: "who",
+  },
+
+  {
+    name: "Rafeek Bassem",
+    email: "rafeeq.eshaq@student.guc.edu.eg",
+    username: "rafeek",
+    type: UserType.CLIENT,
+    password: "rafeek",
+  },
+
+  {
     name: "Nada Labib",
     email: "nada.labib@guc.edu.eg",
     username: "nada.labib",

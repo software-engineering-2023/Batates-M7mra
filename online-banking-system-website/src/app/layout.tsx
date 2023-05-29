@@ -93,6 +93,30 @@ const sidebarLinks: SidebarLink[] = [
     text: "Client Reports",
     userTypes: [UserType.BANKER],
   },
+  {
+    href: "/registration/registration-approval",
+    icon: "bi bi-plus",
+    text: "Registration Requests",
+    userTypes: [UserType.BANKER],
+  },
+  {
+    href: "/credit-cards/open/open-approval",
+    icon: "bi bi-plus",
+    text: "Credit Card Requests",
+    userTypes: [UserType.BANKER],
+  },
+  {
+    href: "/bank-accounts/open/open-approval",
+    icon: "bi bi-plus",
+    text: "Account Open Requests",
+    userTypes: [UserType.BANKER],
+  },
+  {
+    href: "/loans/banker-loan-page",
+    icon: "bi bi-plus",
+    text: "Loan Requests",
+    userTypes: [UserType.BANKER],
+  },
 ];
 
 interface NavbarContext {
@@ -247,7 +271,10 @@ export default function RootLayout({
                             width={45}
                             className="rounded-circle"
                           />
-                          {user?.name}
+                          <div className="d-flex flex-column">
+                            <span>{user?.name}</span>
+                            <small>({user?.type})</small>
+                          </div>
                         </div>
                         <hr />
                         <button

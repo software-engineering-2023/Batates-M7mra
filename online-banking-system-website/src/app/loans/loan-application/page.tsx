@@ -1,4 +1,9 @@
+"use client";
+import { useRouter } from "next/navigation";
+import { useContext, useEffect, useState } from "react";
 export default function Accounts() {
+  const [showAlert, setShowAlert] = useState(false);
+  const router = useRouter();
   return (
     <div className="row h-100 d-flex justify-content-center align-items-center">
       <div className="col-xl-8 col-lg-10 col-md-12">
@@ -31,15 +36,15 @@ export default function Accounts() {
                 </div>
               </div>
               <div className="input-group">
-                    <span className="input-group-text">Loan Type</span>
-                  <select className="form-select" id="loanType" required>
-                    <option value="" disabled selected>
-                      Select your option
-                    </option>
-                    <option value="1">Personal Loan</option>
-                    <option value="2">Car Loan</option>
-                  </select>
-                </div>
+                <span className="input-group-text">Loan Type</span>
+                <select className="form-select" id="loanType" required>
+                  <option value="" disabled selected>
+                    Select your option
+                  </option>
+                  <option value="1">Personal Loan</option>
+                  <option value="2">Car Loan</option>
+                </select>
+              </div>
               <label htmlFor="reason" className="form-label">
                 Reason for Application
               </label>
@@ -55,15 +60,15 @@ export default function Accounts() {
                 required
               />
               <div className="input-group">
-                    <span className="input-group-text">Marital Status</span>
-                  <select className="form-select" id="maritalStatus" required>
-                    <option value="" disabled selected>
-                      Select your option
-                    </option>
-                    <option value="1">Single</option>
-                    <option value="2">Married</option>
-                    <option value="3">Other</option>
-                  </select>
+                <span className="input-group-text">Marital Status</span>
+                <select className="form-select" id="maritalStatus" required>
+                  <option value="" disabled selected>
+                    Select your option
+                  </option>
+                  <option value="1">Single</option>
+                  <option value="2">Married</option>
+                  <option value="3">Other</option>
+                </select>
               </div>
               <h3>Employment Information</h3>
               <div className="row">
@@ -163,13 +168,29 @@ export default function Accounts() {
                   reporting agencies.
                 </label>
               </div>
-              <button type="submit" className="btn btn-primary">
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={() => {
+                  setShowAlert(true);
+                  setTimeout(() => {
+                    router.push("/loans");
+                  }, 6000);
+                }}
+              >
                 Submit
               </button>
+
+              {showAlert && (
+                <div className="alert alert-success mt-2">
+                  <i className="bi bi-check-circle-fill me-2"></i>
+                  Registered successfully. Redirecting to loans page...
+                </div>
+              )}
             </form>
           </div>
         </div>
-        </div>
-        </div>
+      </div>
+    </div>
   );
 }
