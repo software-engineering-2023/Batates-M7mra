@@ -37,6 +37,7 @@ const getDummyAccounts = () =>
 
 export default function BankAccounts() {
   const [accounts, setAccounts] = useState<Account[]>([]);
+  const [showCloseAlert, setShowCloseAlert] = useState(false);
 
   useEffect(() => {
     setAccounts(getDummyAccounts());
@@ -44,14 +45,29 @@ export default function BankAccounts() {
 
   return (
     <div className="container">
-      <div className="row">
+      <div className="row mb-3">
         <div className="col">
-          <Link className="btn btn-primary" href="/bank-accounts/open">
-
+          <Link
+            className="btn btn-primary btn-lg d-flex align-items-center justify-content-center w-25 mx-auto"
+            href="/bank-accounts/open"
+            style={{ height: 75 }}
+          >
+            <i className="bi bi-plus-lg me-2"></i>
+            Open account
           </Link>
         </div>
       </div>
-  
+
+      {showCloseAlert && (
+        <div className="row mb-3">
+          <div className="col">
+            <div className="alert alert-warning alert-dismissible fade show">
+              Account closed successfully.
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
         {accounts.map((account, i) => (
           <div className="col" key={i}>
@@ -101,16 +117,20 @@ export default function BankAccounts() {
                   </tbody>
                 </table>
               </div>
-              <div className="card-footer d-flex gap-2">
+              <div className="card-footer d-flex flex-column gap-2">
                 <Link
                   href="/bank-accounts/transactions"
-                  className="btn btn-primary"
+                  className="btn btn-warning"
                 >
                   <i className="bi bi-arrow-right-circle me-2"></i>
                   View Transactions
                 </Link>
                 <hr />
-                <button className="btn btn-danger">
+                <button
+                  className="btn btn-danger"
+                  data-bs-target="#closeModal"
+                  data-bs-toggle="modal"
+                >
                   <i className="bi bi-x-circle me-2"></i>
                   Close Account
                 </button>
@@ -118,6 +138,60 @@ export default function BankAccounts() {
             </div>
           </div>
         ))}
+      </div>
+      <div
+        className="modal fade"
+        id="closeModal"
+        tabIndex={-1}
+        aria-labelledby="modal"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="modal">
+                Close Account
+              </h1>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body d-flex flex-column gap-2">
+              <input
+                required
+                type="password"
+                id="points"
+                className="form-control"
+                placeholder="Enter your password ..."
+              />
+            </div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                className="btn btn-danger"
+                data-bs-dismiss="modal"
+                onClick={() => {
+                  setShowCloseAlert(true);
+                  setTimeout(() => {
+                    setShowCloseAlert(false);
+                  }, 2000);
+                }}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

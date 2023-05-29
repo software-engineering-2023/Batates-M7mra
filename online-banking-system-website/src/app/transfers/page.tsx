@@ -661,26 +661,28 @@ export default function Transfers() {
                   {internalTransactions.length === 0 ? (
                     <div className="text-center">No transactions found</div>
                   ) : (
-                    <table className="table table-responsive table-striped table-hover table-dark">
-                      <thead>
-                        <tr className="text-uppercase text-muted">
-                          <th>From</th>
-                          <th>To</th>
-                          <th>Amount</th>
-                          <th>Date</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {internalTransactions.map((transaction, index) => (
-                          <tr key={index}>
-                            <td>{transaction.from}</td>
-                            <td>{transaction.to}</td>
-                            <td>{transaction.amount} $</td>
-                            <td>{transaction.date.toLocaleDateString()}</td>
+                    <div className="table-responsive">
+                      <table className="table table-striped table-hover table-dark">
+                        <thead>
+                          <tr className="text-uppercase text-muted">
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Amount</th>
+                            <th>Date</th>
                           </tr>
-                        ))}
-                      </tbody>
-                    </table>
+                        </thead>
+                        <tbody>
+                          {internalTransactions.map((transaction, index) => (
+                            <tr key={index}>
+                              <td>{transaction.from}</td>
+                              <td>{transaction.to}</td>
+                              <td>{transaction.amount} $</td>
+                              <td>{transaction.date.toLocaleDateString()}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
                   )}
                 </div>
               </div>
@@ -693,28 +695,30 @@ export default function Transfers() {
                   {internalTransactions.length === 0 ? (
                     <div className="text-center">No transactions found</div>
                   ) : (
-                    <table className="table table-responsive table-striped table-hover table-dark">
-                      <thead>
-                        <tr className="text-uppercase text-muted">
-                          <th>From</th>
-                          <th>To</th>
-                          <th>Amount</th>
-                          <th>Date</th>
-                          <th>Bank</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {domesticTransactions.map((transaction, index) => (
-                          <tr key={index}>
-                            <td>{transaction.from}</td>
-                            <td>{transaction.to}</td>
-                            <td>{transaction.amount} $</td>
-                            <td>{transaction.date.toLocaleDateString()}</td>
-                            <td>{transaction.bank}</td>
+                    <div className="table-responsive">
+                      <table className="table table-striped table-hover table-dark">
+                        <thead>
+                          <tr className="text-uppercase text-muted">
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Bank</th>
                           </tr>
-                        ))}
-                      </tbody>
-                    </table>
+                        </thead>
+                        <tbody>
+                          {domesticTransactions.map((transaction, index) => (
+                            <tr key={index}>
+                              <td>{transaction.from}</td>
+                              <td>{transaction.to}</td>
+                              <td>{transaction.amount} $</td>
+                              <td>{transaction.date.toLocaleDateString()}</td>
+                              <td>{transaction.bank}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
                   )}
                 </div>
               </div>
@@ -728,32 +732,36 @@ export default function Transfers() {
                   {internalTransactions.length === 0 ? (
                     <div className="text-center">No transactions found</div>
                   ) : (
-                    <table className="table table-responsive table-striped table-hover table-dark">
-                      <thead>
-                        <tr className="text-uppercase text-muted">
-                          <th>From</th>
-                          <th>To</th>
-                          <th>Amount</th>
-                          <th>Date</th>
-                          <th>IBAN</th>
-                          <th>Bank</th>
-                          <th>Country</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {internationalTransactions.map((transaction, index) => (
-                          <tr key={index}>
-                            <td>{transaction.from}</td>
-                            <td>{transaction.to}</td>
-                            <td>{transaction.amount} $</td>
-                            <td>{transaction.date.toLocaleDateString()}</td>
-                            <td>{transaction.iban}</td>
-                            <td>{transaction.bank}</td>
-                            <td>{transaction.country}</td>
+                    <div className="table-responsive">
+                      <table className="table table-striped table-hover table-dark">
+                        <thead>
+                          <tr className="text-uppercase text-muted">
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>IBAN</th>
+                            <th>Bank</th>
+                            <th>Country</th>
                           </tr>
-                        ))}
-                      </tbody>
-                    </table>
+                        </thead>
+                        <tbody>
+                          {internationalTransactions.map(
+                            (transaction, index) => (
+                              <tr key={index}>
+                                <td>{transaction.from}</td>
+                                <td>{transaction.to}</td>
+                                <td>{transaction.amount} $</td>
+                                <td>{transaction.date.toLocaleDateString()}</td>
+                                <td>{transaction.iban}</td>
+                                <td>{transaction.bank}</td>
+                                <td>{transaction.country}</td>
+                              </tr>
+                            )
+                          )}
+                        </tbody>
+                      </table>
+                    </div>
                   )}
                 </div>
               </div>
