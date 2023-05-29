@@ -41,6 +41,11 @@ const sidebarLinks = [
     icon: "bi bi-flag",
     text: "Report",
   },
+  {
+    href: "/announcement",
+    icon: "bi bi-bell",
+    text: "Announcement",
+  },
 ];
 
 export default function RootLayout({
