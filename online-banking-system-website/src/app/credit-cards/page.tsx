@@ -133,14 +133,15 @@ export default function CreditCards() {
           <div className="container-fluid">
             <div className="row mb-3">
               <div className="col-lg-4 mx-auto col-md-12">
-                <Link
+                <button
                   className="btn btn-primary d-flex align-items-center justify-content-center mx-auto"
                   style={{ height: 75 }}
-                  href="/credit-cards/open"
+                  data-bs-toggle="modal"
+                  data-bs-target="#open"
                 >
                   <i className="bi bi-plus-circle me-2"></i>
                   Apply for a credit card
-                </Link>
+                </button>
               </div>
             </div>
             {showPaymentAlert && (
@@ -605,6 +606,65 @@ export default function CreditCards() {
                       </div>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+            <div
+              className="modal fade"
+              id="open"
+              tabIndex={-1}
+              aria-labelledby="modal"
+              aria-hidden="true"
+            >
+              <div className="modal-dialog">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h1 className="modal-title fs-5" id="modal">
+                      Choose Credit Card Type
+                    </h1>
+                    <button
+                      type="button"
+                      className="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div className="modal-body">
+                    <div className="input-group mb-3">
+                      <select
+                        className="form-select"
+                        id="creditCardType"
+                        required
+                      >
+                        <option value="" disabled selected>
+                          Select your option
+                        </option>
+                        <option value="1">Platinum</option>
+                        <option value="2">Gold</option>
+                        <option value="3">Silver</option>
+                      </select>
+                    </div>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="address"
+                      required
+                      placeholder="Your Name as you Want it to Appear on Your Card"
+                    />
+                  </div>
+                  <div className="alert alert-info fs-6 ms-2 me-2">
+                    All the remaining information needed for completing your
+                    request will be automatically collected from your account
+                  </div>
+                  <div className="modal-footer">
+                    <button
+                      type="submit"
+                      className="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Submit
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
