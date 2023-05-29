@@ -296,6 +296,28 @@ export default function CreditCards() {
                                   </table>
                                 </div>
                               </div>
+                              <div className="row">
+                                <div className="col">
+                                  <div className="card">
+                                    <div className="card-body">
+                                      <div className="form-check form-switch">
+                                        <input
+                                          className="form-check-input"
+                                          type="checkbox"
+                                          role="switch"
+                                          id="flexSwitchCheckDefault"
+                                        />
+                                        <label
+                                          className="form-check-label"
+                                          htmlFor="flexSwitchCheckDefault"
+                                        >
+                                          Remind me about credit bill payment
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                               <div className="row gy-3">
                                 <div className="col-lg-6">
                                   <Link

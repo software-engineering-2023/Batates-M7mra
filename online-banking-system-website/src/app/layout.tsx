@@ -75,6 +75,7 @@ interface NavbarContext {
   setShowSidebar: (show: boolean) => void;
   setUser: (user: User) => void;
   setLoading: (loading: boolean) => void;
+  user: User | null;
 }
 
 export const GlobalStateContext = React.createContext<NavbarContext>(null!);
@@ -116,7 +117,7 @@ export default function RootLayout({
       </head>
       <body data-bs-theme="dark">
         <GlobalStateContext.Provider
-          value={{ setShowSidebar, setUser, setLoading }}
+          value={{ setShowSidebar, setUser, setLoading, user }}
         >
           {showSidebar && (
             <nav className="navbar navbar-expand-lg bg-body-tertiary d-block d-md-none fixed-top">

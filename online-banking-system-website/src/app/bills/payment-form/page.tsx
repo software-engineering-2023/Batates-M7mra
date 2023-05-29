@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { CreditCard } from "../credit-cards/page";
+import { CreditCard } from "../../credit-cards/page";
 
 export default function contact() {
   return (
