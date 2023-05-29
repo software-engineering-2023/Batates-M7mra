@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Accounts() {
   return (
     <>
-      <h1 className="card-title">Pending Bank Account Approvals</h1>
+      <h1 className="card-title">Pending Credit Card Approvals</h1>
       <table className="table table-striped table-hover table-dark table-responsive">
         <thead>
           <tr>
@@ -21,10 +20,7 @@ export default function Accounts() {
               Gender
             </th>
             <th scope="col" className="fs-3">
-              Currency
-            </th>
-            <th scope="col" className="fs-3">
-              Account Type
+              Card Type
             </th>
             <th scope="col" className="fs-3">
               Applicant Info
@@ -37,10 +33,9 @@ export default function Accounts() {
             <td>McLovin Doe</td>
             <td>42</td>
             <td>Male</td>
-            <td>USD</td>
-            <td>Savings</td>
+            <td>Platinum</td>
             <td>
-              <Link href="/bank-accounts/open/open-approval/open-approval-info">
+              <Link href="/credit-cards/open/open-approval/open-approval-info">
                 <button type="button" className="btn btn-secondary btn-sm w-50">
                   View
                 </button>
@@ -52,8 +47,7 @@ export default function Accounts() {
             <td>John Doe</td>
             <td>33</td>
             <td>Male</td>
-            <td>EUR</td>
-            <td>Checking</td>
+            <td>Gold</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -65,8 +59,7 @@ export default function Accounts() {
             <td>Jane Doe</td>
             <td>25</td>
             <td>Female</td>
-            <td>EGP</td>
-            <td>Savings</td>
+            <td>Silver</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -78,8 +71,7 @@ export default function Accounts() {
             <td>Makin Doe</td>
             <td>22</td>
             <td>Male</td>
-            <td>GBP</td>
-            <td>Checking</td>
+            <td>Platinum</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -91,8 +83,7 @@ export default function Accounts() {
             <td>Bakin Doe</td>
             <td>18</td>
             <td>Female</td>
-            <td>MXN</td>
-            <td>Savings</td>
+            <td>Silver</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -104,8 +95,7 @@ export default function Accounts() {
             <td>Chasin Doe</td>
             <td>21</td>
             <td>Female</td>
-            <td>AUD</td>
-            <td>Checking</td>
+            <td>Gold</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -117,8 +107,7 @@ export default function Accounts() {
             <td>Eatin Doe</td>
             <td>50</td>
             <td>Female</td>
-            <td>CAD</td>
-            <td>Savings</td>
+            <td>Platinum</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -130,8 +119,7 @@ export default function Accounts() {
             <td>Fakin Doe</td>
             <td>52</td>
             <td>Female</td>
-            <td>JPY</td>
-            <td>Checking</td>
+            <td>Silver</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -143,8 +131,7 @@ export default function Accounts() {
             <td>Justin Doe</td>
             <td>25</td>
             <td>Male</td>
-            <td>CNY</td>
-            <td>Savings</td>
+            <td>Gold</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View
@@ -156,8 +143,7 @@ export default function Accounts() {
             <td>Lovin Doe</td>
             <td>40</td>
             <td>Male</td>
-            <td>INR</td>
-            <td>Checking</td>
+            <td>Platinum</td>
             <td>
               <button type="button" className="btn btn-secondary btn-sm w-50">
                 View

@@ -1,3 +1,9 @@
+"use client";
+
+import { GlobalStateContext } from "@/app/layout";
+import { useRouter } from "next/navigation";
+import { useContext, useEffect, useState } from "react";
+
 const countries = [
   "Afghanistan",
   "Albania",
@@ -392,7 +398,10 @@ const nationalities = [
   "Zimbabwean",
 ];
 
-export default function Accounts() {
+export default function Registration() {
+  const [showAlert, setShowAlert] = useState(false);
+  const router = useRouter();
+
   return (
     <div className="row h-100 d-flex justify-content-center align-items-center">
       <div className="col-xl-8 col-lg-10 col-md-12">
@@ -577,7 +586,7 @@ export default function Accounts() {
                   <label htmlFor="maritalStatus" className="form-label">
                     Marital Status
                   </label>
-                  <div className="input-group mb-4">
+                  <div className="input-group">
                     <select className="form-select" id="maritalStatus" required>
                       <option value="" disabled selected>
                         Select your option
@@ -590,19 +599,7 @@ export default function Accounts() {
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="col">
-                  <button type="button" className="btn btn-primary w-100">
-                    Upload Photo of ID (Front)
-                  </button>
-                </div>
-                <div className="col">
-                  <button type="button" className="btn btn-primary w-100">
-                    Upload Photo of ID (Back)
-                  </button>
-                </div>
-              </div>
-              <div className="row">
+              <div className="row mb-4">
                 <div className="col">
                   <label htmlFor="currentEmployer" className="form-label">
                     Current Employer
@@ -624,6 +621,18 @@ export default function Accounts() {
                     id="occupation"
                     required
                   />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <button type="button" className="btn btn-primary w-100">
+                    Upload Photo of ID (Front)
+                  </button>
+                </div>
+                <div className="col">
+                  <button type="button" className="btn btn-primary w-100">
+                    Upload Photo of ID (Back)
+                  </button>
                 </div>
               </div>
               <div className="row ms-1 me-1">
@@ -651,9 +660,26 @@ export default function Accounts() {
                   or help them buy the right ads on the right platforms
                 </label>
               </div>
-              <button type="submit" className="btn btn-primary ms-1 me-1">
+
+              <button
+                type="button"
+                className="btn btn-primary ms-1 me-1"
+                onClick={() => {
+                  setShowAlert(true);
+                  setTimeout(() => {
+                    router.push("/auth/login");
+                  }, 2000);
+                }}
+              >
                 Submit
               </button>
+
+              {showAlert && (
+                <div className="alert alert-success mt-2">
+                  <i className="bi bi-check-circle-fill me-2"></i>
+                  Registered successfully. Redirecting to login page...
+                </div>
+              )}
             </form>
           </div>
         </div>

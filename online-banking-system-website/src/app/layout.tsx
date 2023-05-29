@@ -28,7 +28,7 @@ const sidebarLinks: SidebarLink[] = [
     href: "/",
     icon: "house",
     text: "Home",
-    userTypes: [UserType.CLIENT],
+    userTypes: [UserType.CLIENT, UserType.BANKER, UserType.ADMIN],
   },
 
   {
@@ -70,9 +70,27 @@ const sidebarLinks: SidebarLink[] = [
     userTypes: [UserType.CLIENT],
   },
   {
-    href: "/loans/banker-loan-page",
-    icon: "cash-coin",
-    text: "Loan Requests",
+    href: "/report",
+    icon: "bi bi-flag",
+    text: "Report",
+    userTypes: [UserType.CLIENT],
+  },
+  {
+    href: "/announcement/banker-admin",
+    icon: "bi bi-bell",
+    text: "Announcement",
+    userTypes: [UserType.BANKER, UserType.ADMIN],
+  },
+  {
+    href: "/report/admin",
+    icon: "bi bi-flag",
+    text: "Client Technical Issues",
+    userTypes: [UserType.ADMIN],
+  },
+  {
+    href: "/report/banker",
+    icon: "bi bi-flag",
+    text: "Client Reports",
     userTypes: [UserType.BANKER],
   },
 ];
@@ -81,6 +99,7 @@ interface NavbarContext {
   setShowSidebar: (show: boolean) => void;
   setUser: (user: User) => void;
   setLoading: (loading: boolean) => void;
+  user: User | null;
 }
 
 export const GlobalStateContext = React.createContext<NavbarContext>(null!);
@@ -108,7 +127,7 @@ export default function RootLayout({
       setLoading(false);
     } else {
       if (!pathname.startsWith("/auth")) {
-        router.replace("/auth/login");
+        router.replace("/auth");
       }
     }
   }, []);
@@ -122,13 +141,13 @@ export default function RootLayout({
       </head>
       <body data-bs-theme="dark">
         <GlobalStateContext.Provider
-          value={{ setShowSidebar, setUser, setLoading }}
+          value={{ setShowSidebar, setUser, setLoading, user }}
         >
           {showSidebar && (
             <nav className="navbar navbar-expand-lg bg-body-tertiary d-block d-md-none fixed-top">
               <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                  Bankaak
+                  Nextech
                 </a>
                 <button
                   className="navbar-toggler"
@@ -196,7 +215,7 @@ export default function RootLayout({
                           href="/"
                           className="d-flex align-items-center text-decoration-none link-body-emphasis"
                         >
-                          <span className="fs-1">Bankaak</span>
+                          <span className="fs-1">Nextech</span>
                         </Link>
                         <ul className="nav nav-pills flex-column my-auto">
                           {sidebarLinks
@@ -232,7 +251,7 @@ export default function RootLayout({
                         </div>
                         <hr />
                         <button
-                          className="btn btn-danger"
+                          className="btn btn-outline-danger"
                           onClick={() => {
                             if (confirm("Are you sure you want to logout?")) {
                               localStorage.removeItem("user");

@@ -2,317 +2,143 @@ import Link from "next/link";
 
 export default function Accounts() {
   return (
-    <div className="row h-100 d-flex justify-content-center align-items-center">
-      <div className="col-xl-12 col-lg-12 col-md-12">
-        <div className="card">
-          <div className="card-body">
-            <h1 className="card-title">Pending Registration Approvals</h1>
-            <form className="d-flex flex-column gap-3">
-              <div className="row d-flex justify-content-center fs-3 mb-3 mt-5">
-                McLovin Doe
-              </div>
-              <div className="row">
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-success btn-lg w-100"
-                  >
-                    Approve
-                  </button>
-                </div>
-                <div className="col">
-                  <Link href="/registration/registration-approval/registration-approval-info">
-                    <button
-                      type="button"
-                      className="btn btn-outline-primary btn-lg w-100"
-                    >
-                      View Information
-                    </button>
-                  </Link>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-danger btn-lg w-100"
-                  >
-                    Decline
-                  </button>
-                </div>
-              </div>
-              <hr></hr>
-              <div className="row d-flex justify-content-center fs-3 mb-3">
-                John Doe
-              </div>
-              <div className="row">
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-success btn-lg w-100"
-                  >
-                    Approve
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-lg w-100"
-                  >
-                    View Information
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-danger btn-lg w-100"
-                  >
-                    Decline
-                  </button>
-                </div>
-              </div>
-              <hr></hr>
-              <div className="row d-flex justify-content-center fs-3 mb-3">
-                Jane Doe
-              </div>
-              <div className="row">
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-success btn-lg w-100"
-                  >
-                    Approve
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-lg w-100"
-                  >
-                    View Information
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-danger btn-lg w-100"
-                  >
-                    Decline
-                  </button>
-                </div>
-              </div>
-              <hr></hr>
-              <div className="row d-flex justify-content-center fs-3 mb-3">
-                Makin Doe
-              </div>
-              <div className="row">
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-success btn-lg w-100"
-                  >
-                    Approve
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-lg w-100"
-                  >
-                    View Information
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-danger btn-lg w-100"
-                  >
-                    Decline
-                  </button>
-                </div>
-              </div>
-              <hr></hr>
-              <div className="row d-flex justify-content-center fs-3 mb-3">
-                Bakin Doe
-              </div>
-              <div className="row">
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-success btn-lg w-100"
-                  >
-                    Approve
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-lg w-100"
-                  >
-                    View Information
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-danger btn-lg w-100"
-                  >
-                    Decline
-                  </button>
-                </div>
-              </div>
-              <hr></hr>
-              <div className="row d-flex justify-content-center fs-3 mb-3">
-                Eatin Doe
-              </div>
-              <div className="row">
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-success btn-lg w-100"
-                  >
-                    Approve
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-lg w-100"
-                  >
-                    View Information
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-danger btn-lg w-100"
-                  >
-                    Decline
-                  </button>
-                </div>
-              </div>
-              <hr></hr>
-              <div className="row d-flex justify-content-center fs-3 mb-3">
-                Fakin Doe
-              </div>
-              <div className="row">
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-success btn-lg w-100"
-                  >
-                    Approve
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-lg w-100"
-                  >
-                    View Information
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-danger btn-lg w-100"
-                  >
-                    Decline
-                  </button>
-                </div>
-              </div>
-              <hr></hr>
-              <div className="row d-flex justify-content-center fs-3 mb-3">
-                True Doe
-              </div>
-              <div className="row">
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-success btn-lg w-100"
-                  >
-                    Approve
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-lg w-100"
-                  >
-                    View Information
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-danger btn-lg w-100"
-                  >
-                    Decline
-                  </button>
-                </div>
-              </div>
-              <hr></hr>
-              <div className="row d-flex justify-content-center fs-3 mb-3">
-                Dont Doe
-              </div>
-              <div className="row">
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-success btn-lg w-100"
-                  >
-                    Approve
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-lg w-100"
-                  >
-                    View Information
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-danger btn-lg w-100"
-                  >
-                    Decline
-                  </button>
-                </div>
-              </div>
-              <hr></hr>
-              <div className="row d-flex justify-content-center fs-3 mb-3">
-                Lovin Doe
-              </div>
-              <div className="row">
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-success btn-lg w-100"
-                  >
-                    Approve
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-lg w-100"
-                  >
-                    View Information
-                  </button>
-                </div>
-                <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-outline-danger btn-lg w-100"
-                  >
-                    Decline
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <h1 className="card-title">Pending Registration Approvals</h1>
+      <table className="table table-striped table-hover table-dark table-responsive">
+        <thead>
+          <tr>
+            <th scope="col" className="fs-3">
+              #
+            </th>
+            <th scope="col" className="fs-3">
+              Name
+            </th>
+            <th scope="col" className="fs-3">
+              Age
+            </th>
+            <th scope="col" className="fs-3">
+              Gender
+            </th>
+            <th scope="col" className="fs-3">
+              Applicant Info
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>McLovin Doe</td>
+            <td>42</td>
+            <td>Male</td>
+            <td>
+              <Link href="/registration/registration-approval/registration-approval-info">
+                <button type="button" className="btn btn-secondary btn-sm w-50">
+                  View
+                </button>
+              </Link>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>John Doe</td>
+            <td>33</td>
+            <td>Male</td>
+            <td>
+              <button type="button" className="btn btn-secondary btn-sm w-50">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Jane Doe</td>
+            <td>25</td>
+            <td>Female</td>
+            <td>
+              <button type="button" className="btn btn-secondary btn-sm w-50">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Makin Doe</td>
+            <td>22</td>
+            <td>Male</td>
+            <td>
+              <button type="button" className="btn btn-secondary btn-sm w-50">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Bakin Doe</td>
+            <td>18</td>
+            <td>Female</td>
+            <td>
+              <button type="button" className="btn btn-secondary btn-sm w-50">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Chasin Doe</td>
+            <td>21</td>
+            <td>Female</td>
+            <td>
+              <button type="button" className="btn btn-secondary btn-sm w-50">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Eatin Doe</td>
+            <td>50</td>
+            <td>Female</td>
+            <td>
+              <button type="button" className="btn btn-secondary btn-sm w-50">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Fakin Doe</td>
+            <td>52</td>
+            <td>Female</td>
+            <td>
+              <button type="button" className="btn btn-secondary btn-sm w-50">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Justin Doe</td>
+            <td>25</td>
+            <td>Male</td>
+            <td>
+              <button type="button" className="btn btn-secondary btn-sm w-50">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Lovin Doe</td>
+            <td>40</td>
+            <td>Male</td>
+            <td>
+              <button type="button" className="btn btn-secondary btn-sm w-50">
+                View
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 }
