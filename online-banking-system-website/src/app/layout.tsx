@@ -8,7 +8,7 @@ import { Miriam_Libre } from "next/font/google";
 
 import "./global.scss";
 import React from "react";
-import { User, UserType } from "./auth/login/page";
+import { User, UserType } from "@/types";
 
 const spaceMono = Miriam_Libre({
   weight: "400",
@@ -111,11 +111,9 @@ export default function RootLayout({
     const user = localStorage.getItem("user");
 
     if (user) {
-      console.log("user", user);
       setUser(JSON.parse(user));
       setShowSidebar(true);
       setLoading(false);
-      console.log(showSidebar);
     } else {
       if (!pathname.startsWith("/auth")) {
         router.replace("/auth/login");

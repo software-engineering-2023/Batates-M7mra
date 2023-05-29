@@ -52,6 +52,10 @@ $btn-primary-bg: #c523bd;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+.credit-card.gold {
+  background-image: linear-gradient(to right, darken($warning, 5%) 0%, lighten($warning, 5%) 51%, darken($warning, 5%) 100%);
+}
+
 .credit-card:hover {
   background-position: right center; /* change the direction of the change here */
 }

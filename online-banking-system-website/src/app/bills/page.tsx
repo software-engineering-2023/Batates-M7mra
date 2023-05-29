@@ -111,7 +111,7 @@ export default function Bills() {
                     role="button"
                     onClick={handleButtonClick}
                   >
-                    Set Remainder
+                    Set Reminder
                   </button>
                 </div>
               </div>
