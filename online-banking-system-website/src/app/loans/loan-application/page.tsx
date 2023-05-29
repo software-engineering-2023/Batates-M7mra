@@ -31,10 +31,7 @@ export default function Accounts() {
                 </div>
               </div>
               <div className="input-group">
-                <label htmlFor="loanType" className="form-label">
-                  Loan Type
-                </label>
-                <div className="input-group">
+                    <span className="input-group-text">Loan Type</span>
                   <select className="form-select" id="loanType" required>
                     <option value="" disabled selected>
                       Select your option
@@ -43,7 +40,6 @@ export default function Accounts() {
                     <option value="2">Car Loan</option>
                   </select>
                 </div>
-              </div>
               <label htmlFor="reason" className="form-label">
                 Reason for Application
               </label>
@@ -58,11 +54,8 @@ export default function Accounts() {
                 id="birthDate"
                 required
               />
-              <div className="input-group mb-4">
-                <label htmlFor="maritalStatus" className="form-label">
-                  Marital Status
-                </label>
-                <div className="input-group">
+              <div className="input-group">
+                    <span className="input-group-text">Marital Status</span>
                   <select className="form-select" id="maritalStatus" required>
                     <option value="" disabled selected>
                       Select your option
@@ -71,7 +64,6 @@ export default function Accounts() {
                     <option value="2">Married</option>
                     <option value="3">Other</option>
                   </select>
-                </div>
               </div>
               <h3>Employment Information</h3>
               <div className="row">
@@ -177,7 +169,7 @@ export default function Accounts() {
             </form>
           </div>
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
   );
 }

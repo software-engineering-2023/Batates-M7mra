@@ -94,9 +94,7 @@ export default function Home() {
             <form id="loan-form">
               <div className="form-group">
                 <div className="input-group">
-                  <div className="input-group-prepend">
                     <span className="input-group-text">$</span>
-                  </div>
                   <input
                     type="number"
                     className="form-control"
@@ -107,9 +105,7 @@ export default function Home() {
               </div>
               <div className="form-group">
                 <div className="input-group">
-                  <div className="input-group-prepend">
                     <span className="input-group-text">%</span>
-                  </div>
                   <input
                     type="number"
                     className="form-control"
@@ -143,9 +139,7 @@ export default function Home() {
             <div id="result">
               <div className="form-group">
                 <div className="input-group">
-                  <div className="input-group-prepend">
                     <span className="input-group-text">Monthly Payment</span>
-                  </div>
                   <input
                     type="number"
                     className="form-control"
@@ -156,9 +150,7 @@ export default function Home() {
               </div>
               <div className="form-group">
                 <div className="input-group">
-                  <div className="input-group-prepend">
                     <span className="input-group-text">Total Payment</span>
-                  </div>
                   <input
                     type="number"
                     className="form-control"
@@ -169,9 +161,7 @@ export default function Home() {
               </div>
               <div className="form-group">
                 <div className="input-group">
-                  <div className="input-group-prepend">
                     <span className="input-group-text">Total Interest</span>
-                  </div>
                   <input
                     type="number"
                     className="form-control"
