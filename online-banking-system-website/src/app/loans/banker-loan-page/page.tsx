@@ -55,7 +55,7 @@ export default function Loans() {
                 <div className="col-3">
                   <button
                     type="button"
-                    className="btn btn-primary btn-lg"
+                    className="btn btn-primary btn-lg mb-5"
                     data-bs-toggle="modal"
                     data-bs-target="#loan1"
                   >
@@ -122,7 +122,7 @@ export default function Loans() {
                   <div className="col-3">
                     <button
                       type="button"
-                      className="btn btn-primary btn-lg"
+                      className="btn btn-primary btn-lg mb-5"
                       data-bs-toggle="modal"
                       data-bs-target="#loan1"
                     >
@@ -188,7 +188,7 @@ export default function Loans() {
                 <div className="col-3">
                   <button
                     type="button"
-                    className="btn btn-primary btn-lg"
+                    className="btn btn-primary btn-lg mb-5"
                     data-bs-toggle="modal"
                     data-bs-target="#loan1"
                   >
@@ -254,7 +254,7 @@ export default function Loans() {
               <div className="col-3">
                 <button
                   type="button"
-                  className="btn btn-primary btn-lg"
+                  className="btn btn-primary btn-lg mb-5"
                   data-bs-toggle="modal"
                   data-bs-target="#loan1"
                 >

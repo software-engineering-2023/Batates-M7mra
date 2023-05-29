@@ -24,7 +24,7 @@ export default function Accounts() {
       <div className="col-xl-8 col-lg-10 col-md-12">
         <div className="card">
           <div className="card-body">
-            <h1 className="card-title">Bank Account Applicant Info</h1>
+            <h1 className="card-title">Credit Card Applicant Info</h1>
             <form className="d-flex flex-column gap-3">
               <div className="row">
                 <div className="col">
@@ -92,15 +92,17 @@ export default function Accounts() {
               </div>
               <div className="row">
                 <div className="col">
-                  <label htmlFor="currency" className="form-label">
-                    Currency
+                  <label htmlFor="cardType" className="form-label">
+                    Card Type
                   </label>
                   <div className="input-group">
-                    <select className="form-select" id="currency" disabled>
-                      <option value="" disabled selected>
-                        USD
-                      </option>
-                    </select>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="cardType"
+                      disabled
+                      placeholder="Platinum"
+                    />
                   </div>
                 </div>
                 <div className="col">
@@ -258,7 +260,7 @@ export default function Accounts() {
               </div>
               <div className="row">
                 <div className="col">
-                  <Link href="/bank-accounts/open/open-approval">
+                  <Link href="/credit-cards/open/open-approval">
                     <button
                       type="button"
                       className="btn btn-success w-100"
@@ -269,7 +271,7 @@ export default function Accounts() {
                   </Link>
                 </div>
                 <div className="col">
-                  <Link href="/bank-accounts/open/open-approval">
+                  <Link href="/credit-cards/open/open-approval">
                     <button
                       type="button"
                       className="btn btn-danger w-100"
@@ -288,7 +290,7 @@ export default function Accounts() {
             <div className="col-4"></div>
             <div className="col-4">
               <div className="alert alert-success d-flex justify-content-center align-items-center fs-6 ms-2">
-                Bank Account Approved
+                Credit Card Approved
               </div>
             </div>
           </div>
@@ -298,7 +300,7 @@ export default function Accounts() {
             <div className="col-4"></div>
             <div className="col-4">
               <div className="alert alert-danger d-flex justify-content-center align-items-center fs-6 ms-2">
-                Bank Account Declined
+                Credit Card Declined
               </div>
             </div>
           </div>

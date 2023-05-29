@@ -577,7 +577,7 @@ export default function Accounts() {
                   <label htmlFor="maritalStatus" className="form-label">
                     Marital Status
                   </label>
-                  <div className="input-group mb-4">
+                  <div className="input-group">
                     <select className="form-select" id="maritalStatus" required>
                       <option value="" disabled selected>
                         Select your option
@@ -590,19 +590,7 @@ export default function Accounts() {
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="col">
-                  <button type="button" className="btn btn-primary w-100">
-                    Upload Photo of ID (Front)
-                  </button>
-                </div>
-                <div className="col">
-                  <button type="button" className="btn btn-primary w-100">
-                    Upload Photo of ID (Back)
-                  </button>
-                </div>
-              </div>
-              <div className="row">
+              <div className="row mb-4">
                 <div className="col">
                   <label htmlFor="currentEmployer" className="form-label">
                     Current Employer
@@ -624,6 +612,18 @@ export default function Accounts() {
                     id="occupation"
                     required
                   />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <button type="button" className="btn btn-primary w-100">
+                    Upload Photo of ID (Front)
+                  </button>
+                </div>
+                <div className="col">
+                  <button type="button" className="btn btn-primary w-100">
+                    Upload Photo of ID (Back)
+                  </button>
                 </div>
               </div>
               <div className="row ms-1 me-1">

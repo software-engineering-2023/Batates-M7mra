@@ -1,4 +1,24 @@
+"use client";
+import Link from "next/link";
+import { useState } from "react";
+
 export default function Accounts() {
+  const [showApproval, setShowApproval] = useState(false);
+  const [showDeclination, setShowDeclination] = useState(false);
+  const onClickApproved = () => {
+    setShowApproval(true);
+    setShowDeclination(false);
+    setTimeout(() => {
+      setShowApproval(false);
+    }, 2000);
+  };
+  const onClickDeclined = () => {
+    setShowApproval(false);
+    setShowDeclination(true);
+    setTimeout(() => {
+      setShowDeclination(false);
+    }, 2000);
+  };
   return (
     <div className="row h-100 d-flex justify-content-center align-items-center">
       <div className="col-xl-8 col-lg-10 col-md-12">
@@ -192,20 +212,6 @@ export default function Accounts() {
               </div>
               <div className="row">
                 <div className="col">
-                  <label htmlFor="front" className="form-label">
-                    ID Photo (Front)
-                  </label>
-                  <img src="/front.jpg" width={381}></img>
-                </div>
-                <div className="col">
-                  <label htmlFor="back" className="form-label">
-                    ID Photo (Back)
-                  </label>
-                  <img src="/back.jpg" width={381}></img>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
                   <label htmlFor="currentEmployer" className="form-label">
                     Current Employer
                   </label>
@@ -230,6 +236,20 @@ export default function Accounts() {
                   />
                 </div>
               </div>
+              <div className="row">
+                <div className="col">
+                  <label htmlFor="front" className="form-label">
+                    ID Photo (Front)
+                  </label>
+                  <img src="/front.jpg" width={381}></img>
+                </div>
+                <div className="col">
+                  <label htmlFor="back" className="form-label">
+                    ID Photo (Back)
+                  </label>
+                  <img src="/back.jpg" width={381}></img>
+                </div>
+              </div>
               <div className="row ms-1 me-1">
                 <label htmlFor="accountNumber" className="form-label">
                   Account Number (Only if You Have an Account in the Bank)
@@ -238,31 +258,57 @@ export default function Accounts() {
                   type="text"
                   className="form-control"
                   id="accountNumber"
+                  disabled
                   placeholder="100098706540320"
                 />
               </div>
-              <h4>Terms and Conditions</h4>
-              <div className="form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="exampleCheck1"
-                  disabled
-                  checked
-                />
-                <label className="form-check-label" htmlFor="exampleCheck1">
-                  I agree to all my information being sold to major corporations
-                  to feed their algorithms & help them with ad placement so they
-                  can make more & more money from advertising on their platforms
-                  or help them buy the right ads on the right platforms
-                </label>
+              <div className="row">
+                <div className="col">
+                  <Link href="/registration/registration-approval">
+                    <button
+                      type="submit"
+                      className="btn btn-success w-100"
+                      onClick={onClickApproved}
+                    >
+                      Approve
+                    </button>
+                  </Link>
+                </div>
+                <div className="col">
+                  <Link href="/registration/registration-approval">
+                    <button
+                      type="submit"
+                      className="btn btn-danger w-100"
+                      onClick={onClickDeclined}
+                    >
+                      Decline
+                    </button>
+                  </Link>
+                </div>
               </div>
-              <button type="submit" className="btn btn-primary ms-1 me-1">
-                Submit
-              </button>
             </form>
           </div>
         </div>
+        {showApproval && (
+          <div className="row mt-3">
+            <div className="col-4"></div>
+            <div className="col-4">
+              <div className="alert alert-success d-flex justify-content-center align-items-center fs-6 ms-2">
+                Credit Card Approved
+              </div>
+            </div>
+          </div>
+        )}
+        {showDeclination && (
+          <div className="row mt-3">
+            <div className="col-4"></div>
+            <div className="col-4">
+              <div className="alert alert-danger d-flex justify-content-center align-items-center fs-6 ms-2">
+                Credit Card Declined
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
