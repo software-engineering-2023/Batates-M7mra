@@ -25,7 +25,7 @@ export default function Report() {
       <td>Technical Issues</td>
       <td>'2023-05-25'</td>
       <td><span className="badge text-bg-warning">Pending</span></td>
-      <td><Link href="http://localhost:3000/report/details" className="btn btn-outline-primary btn-sm">View</Link></td>
+      <td><Link href="/report/details" className="btn btn-outline-primary btn-sm">View</Link></td>
     </tr>
     <tr>
       <td>52-7516</td>
@@ -33,7 +33,7 @@ export default function Report() {
       <td>Fraudulent Activity</td>
       <td>'2023-05-26'</td>
       <td><span className="badge text-bg-success">Resolved</span></td>
-      <td><Link href="http://localhost:3000/report/details" className="btn btn-outline-primary btn-sm">View</Link></td>
+      <td><Link href="/report/details" className="btn btn-outline-primary btn-sm">View</Link></td>
     </tr>
     <tr>
       <td>52-7516</td>
@@ -41,13 +41,13 @@ export default function Report() {
       <td>Technical Issues</td>
       <td>'2023-05-25'</td>
       <td><span className="badge text-bg-secondary">In Progress</span></td>
-      <td><Link href="http://localhost:3000/report/details" className="btn btn-outline-primary btn-sm">View</Link></td>
+      <td><Link href="/report/details" className="btn btn-outline-primary btn-sm">View</Link></td>
     </tr>
   </tbody>
               </table>
             </div>
             <div className="d-flex justify-content-center align-items-centerd mt-2">
-            <Link href="http://localhost:3000/report" className="btn btn-primary btn-lg">Submit a new Report</Link>
+            <Link href="/report" className="btn btn-primary btn-lg">Submit a new Report</Link>
            
             </div>
          

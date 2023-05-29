@@ -10,6 +10,7 @@ export default function Home() {
   const { user } = useContext(GlobalStateContext);
 
   const [showDefaultCardAlert, setDefaultCardAlert] = useState(false);
+  const [showAdminAlert, setShowAdminAlert] = useState(false);
 
   return (
     <div className="container">
@@ -287,6 +288,139 @@ export default function Home() {
 
         {user?.type == UserType.ADMIN && (
           <>
+            <div className="col-6">
+              <div className="card">
+                <div className="card-header">
+                  <i className="bi bi-bell"></i> Announcements
+                </div>
+                <div
+                  className="list-group list-group-flush"
+                  style={{ borderRadius: 20 }}
+                >
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">Maintenance</div>A scheduled
+                      maintenance on our online banking system on{" "}
+                    </div>
+                    <small>
+                      2 hours ago <i className="bi bi-envelope-fill ms-2"></i>
+                    </small>
+                  </a>
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">Ahmed Gomaa</div>
+                      meen ahmed gomaa da?
+                    </div>
+                    <small>
+                      3 days ago <i className="bi bi-envelope-open-fill"></i>
+                    </small>
+                  </a>
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">New Bank Interest Rate</div>
+                      We are excited to inform you that starting from next month
+                    </div>
+                    <small>
+                      21 days ago <i className="bi bi-envelope-open-fill"></i>
+                    </small>
+                  </a>
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">Report 6401 Resolved</div>
+                      Your report has been solved succesfully review now !
+                    </div>
+                    <small>
+                      3 days ago <i className="bi bi-envelope-open-fill"></i>
+                    </small>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-6">
+              {showAdminAlert && (
+                <div className="alert alert-success">
+                  Default card changed successfully.
+                </div>
+              )}
+              <div className="card">
+                <div className="card-header">Maintainance</div>
+                <div className="card-body">
+                  <div className="row row-cols-xl-4 row-cols-lg-2 row-cols-md-1">
+                    <div className="col">
+                      <button
+                        className="btn btn-primary w-100"
+                        style={{ height: 100 }}
+                        onClick={() => {
+                          setShowAdminAlert(true);
+                          setTimeout(() => {
+                            setShowAdminAlert(false);
+                          }, 3000);
+                        }}
+                      >
+                        <i className="bi bi-cloud-download me-3"></i> Backup System
+                      </button>
+                    </div>
+                    <div className="col">
+                      <button
+                        className="btn btn-success w-100"
+                        style={{ height: 100 }}
+                        onClick={() => {
+                          setShowAdminAlert(true);
+                          setTimeout(() => {
+                            setShowAdminAlert(false);
+                          }, 3000);
+                        }}
+                      >
+                        <i className="bi bi-cloud-upload-fill me-3"></i>
+                        Restore System
+                      </button>
+                    </div>
+                    <div className="col">
+                      <button
+                        className="btn btn-info w-100"
+                        style={{ height: 100 }}
+                        onClick={() => {
+                          setShowAdminAlert(true);
+                          setTimeout(() => {
+                            setShowAdminAlert(false);
+                          }, 3000);
+                        }}
+                      >
+                        <i className="bi bi-body-text me-3"></i>
+                        Show Logs
+                      </button>
+                    </div>
+                    <div className="col">
+                      <button
+                        className="btn btn-danger w-100"
+                        style={{ height: 100 }}
+                        onClick={() => {
+                          setShowAdminAlert(true);
+                          setTimeout(() => {
+                            setShowAdminAlert(false);
+                          }, 3000);
+                        }}
+                      >
+                        <i className="bi bi-trash me-3"></i>
+                        Clear Logs
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </>
         )}
       </div>

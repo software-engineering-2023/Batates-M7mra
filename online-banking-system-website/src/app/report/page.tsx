@@ -63,7 +63,7 @@ export default function Report() {
         </div>
       
         <div className="d-flex justify-content-center">
-        <a href="http://localhost:3000/report/status" className="btn btn-primary">Submit Report</a>
+        <a href="/report/status" className="btn btn-primary">Submit Report</a>
         </div>
       </form>
       

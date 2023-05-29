@@ -50,8 +50,8 @@ export default function Report() {
 
 
 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-<Link href="http://localhost:3000/report/status" className="btn btn-primary me-md-2">Back</Link>
-  {/* <Link href="http://localhost:3000/report/status" className="btn btn-primary ">Update Status</Link>  */}
+<Link href="/report/status" className="btn btn-primary me-md-2">Back</Link>
+  {/* <Link href="/report/status" className="btn btn-primary ">Update Status</Link>  */}
 </div>
 
 

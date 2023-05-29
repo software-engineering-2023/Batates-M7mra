@@ -88,9 +88,9 @@ export default function Report() {
                 </div>
               )}
 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-<Link href="http://localhost:3000/report/admin" className="btn btn-primary me-md-2">Close</Link>
+<Link href="/report/admin" className="btn btn-primary me-md-2">Close</Link>
   <button type= "button" onClick={()=>{setShowTextBox(true);setTimeout(() => {setShowTextBox(false) ;
-  router.push("http://localhost:3000/report/admin")
+  router.push("/report/admin")
     
 }, 3000);
 }}className="btn btn-primary ">Update Status</button> 

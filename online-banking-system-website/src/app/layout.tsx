@@ -28,7 +28,7 @@ const sidebarLinks: SidebarLink[] = [
     href: "/",
     icon: "house",
     text: "Home",
-    userTypes: [UserType.CLIENT],
+    userTypes: [UserType.CLIENT, UserType.BANKER, UserType.ADMIN],
   },
 
   {
@@ -73,11 +73,25 @@ const sidebarLinks: SidebarLink[] = [
     href: "/report",
     icon: "bi bi-flag",
     text: "Report",
+    userTypes: [UserType.CLIENT],
   },
   {
-    href: "/announcement",
+    href: "/announcement/banker-admin",
     icon: "bi bi-bell",
     text: "Announcement",
+    userTypes: [UserType.BANKER, UserType.ADMIN],
+  },
+  {
+    href: "/report/admin",
+    icon: "bi bi-flag",
+    text: "Client Technical Issues",
+    userTypes: [UserType.ADMIN],
+  },
+  {
+    href: "/report/banker",
+    icon: "bi bi-flag",
+    text: "Client Reports",
+    userTypes: [UserType.BANKER],
   },
 ];
 
