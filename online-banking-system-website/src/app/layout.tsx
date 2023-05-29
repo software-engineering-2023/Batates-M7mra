@@ -74,6 +74,11 @@ const sidebarLinks: SidebarLink[] = [
     icon: "bi bi-flag",
     text: "Report",
   },
+  {
+    href: "/announcement",
+    icon: "bi bi-bell",
+    text: "Announcement",
+  },
 ];
 
 interface NavbarContext {

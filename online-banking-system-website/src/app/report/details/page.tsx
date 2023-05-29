@@ -1,8 +1,19 @@
+'use client';
 import Link from "next/link";
+import {SetStateAction, useState } from "react";
 
 
 export default function Report() {
- 
+  // const [selectedOption, setSelectedOption] = useState('');
+  //         const [extraInformation, setExtraInformation] = useState('');
+        
+  //         const handleOptionChange = (event: { target: { value: SetStateAction<string>; }; }) => {
+  //           setSelectedOption(event.target.value);
+  //         };
+        
+  //         const handleExtraInformationChange = (event: { target: { value: SetStateAction<string>; }; }) => {
+  //           setExtraInformation(event.target.value);
+  //         };
 
   return (
     <div className="row h-100 d-flex justify-content-center align-items-center">
@@ -30,36 +41,28 @@ export default function Report() {
   <dd className="col-sm-9">kont bagry fe sheben al kom 3nd porto al zawya we hasal henak 3awa2 we mashakel babos 3al card bta3y la2eto etsara2 fa yaret te2flo</dd>
 
   <dt className="col-sm-3">Status</dt>
-  
+  <dd className="col-sm-9">Resolved
+ </dd>
+ <dt className="col-sm-3">Reply</dt>
+  <dd className="col-sm-9">The issue was solved we afshna gom3a we howa m3ana delwa2ty fel room 
+ </dd>
+ 
 
-  <dd className="col-sm-9">
-  <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option2"/>
-  <label className="form-check-label" htmlFor="inlineRadio1">Unhandled</label> 
-</div>
-    <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
-  <label className="form-check-label" htmlFor="inlineRadio1">Pending</label> 
-</div>
-    <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option4"/>
-  <label className="form-check-label me-2" htmlFor="inlineRadio2">In Progress </label>
-  <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3"/>
-  <label className="form-check-label" htmlFor="inlineRadio1">Resolved</label> 
-</div>
-</div></dd>
+
 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-<Link href="http://localhost:3000/report/status" className="btn btn-primary me-md-2">Close</Link>
-  <Link href="http://localhost:3000/report/status" className="btn btn-primary ">Update Status</Link> 
+<Link href="http://localhost:3000/report/status" className="btn btn-primary me-md-2">Back</Link>
+  {/* <Link href="http://localhost:3000/report/status" className="btn btn-primary ">Update Status</Link>  */}
 </div>
 
 
   
 </dl>
+
     </form>
+    <img src="/report.jpg" className="img-thumbnail" width={300} height={300} alt=""></img>
     </div>
     </div>
+    
     </div>
     </div>
   );
