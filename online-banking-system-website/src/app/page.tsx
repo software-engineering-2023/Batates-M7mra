@@ -32,11 +32,9 @@ export default function Home() {
 
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}  >
-        <h1>Reminders</h1>
-      </div>
 
-      <table className="table table-striped table-hover table-dark table-responsive">
+
+      {/* <table className="table table-striped table-hover table-dark table-responsive">
         <thead>
           <tr>
             <th scope="col" className="fs-3">#</th>
@@ -47,17 +45,7 @@ export default function Home() {
           </tr>
         </thead>
         <tbody>
-          {/* {transactions.map((transaction, i) => (
-          <tr key={i}>
-            <th scope="row">{i + 1}</th>
-            <td>{transaction.date.toDateString()}</td>
-            <td>
-            <span className={clsx("badge rounded-pill", transaction.amount > 0 && "text-bg-success", transaction.amount < 0 && "text-bg-danger")}>{transaction.amount > 0 && '+'} {transaction.amount}</span>
-            </td>
-            <td>{transaction.amount > 0 ? 'Incoming' : faker.helpers.arrayElement(['Bill', 'Outgoing'])}</td>
-            <td>{transaction.recipientSender}</td>
-          </tr>
-        ))} */}
+   
           <tr>
             <th scope="row">1</th>
             <td> <span className="date-span">3/1/2024</span></td>
@@ -141,7 +129,99 @@ export default function Home() {
           </tr>
 
         </tbody>
-      </table>
+      </table> */}
+
+
+
+      <div className="list-group" style={{ width: "50%" }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}  >
+          <h1>Reminders</h1>
+        </div>
+        <Link href="/payment-form" className="list-group-item list-group-item-action d-flex gap-3 align-items-center">
+          <div
+            className=" bg-body-tertiary d-flex justify-content-center align-items-center rounded-circle"
+            style={{ width: 50, height: 50 }}
+          >
+            <i className={"bi bi-droplet"}></i>
+          </div>
+          <div className="d-flex justify-content-center  flex-column ">
+            <div>Water Bill</div>
+            <div> 230$ </div>
+
+          </div>
+          <div className="d-flex justify-content-evenly flex-column text-left ms-auto align-items-end">
+            <small className="text-body-secondary">tomorrow</small>
+            <div><Link className="btn btn-primary" href="payment-form">pay</Link></div>
+          </div>
+        </Link>
+        <Link href="/payment-form" className="list-group-item list-group-item-action d-flex gap-3 align-items-center">
+          <div
+            className=" bg-body-tertiary d-flex justify-content-center align-items-center rounded-circle"
+            style={{ width: 50, height: 50 }}
+          >
+            <i className={"bi bi-phone"}></i>
+          </div>
+          <div className="d-flex justify-content-center  flex-column ">
+            <div>Phone Bill</div>
+            <div> 130$ </div>
+          </div>
+          <div className="d-flex justify-content-evenly align-items-end flex-column text-left ms-auto align-items-end">
+            <small className="text-body-secondary">Next Week</small>
+            <div><Link className="btn btn-primary" href="payment-form">pay</Link></div>
+          </div>
+        </Link>
+        <Link href="/payment-form" className="list-group-item list-group-item-action d-flex gap-3 align-items-center">
+          <div
+            className=" bg-body-tertiary d-flex justify-content-center align-items-center rounded-circle"
+            style={{ width: 50, height: 50 }}
+          >
+            <i className={"bi bi-cash"}></i>
+          </div>
+          <div className="d-flex justify-content-center  flex-column ">
+            <div>Loan Payment</div>
+            <div> 1300$ </div>
+
+          </div>
+          <div className="d-flex justify-content-evenly flex-column text-left ms-auto align-items-end">
+            <small className="text-body-secondary">1-july-2023</small>
+            <div><Link className="btn btn-primary" href="payment-form">pay</Link></div>
+          </div>
+        </Link>
+        <Link href="/payment-form" className="list-group-item list-group-item-action d-flex gap-3 align-items-center">
+          <div
+            className=" bg-body-tertiary d-flex justify-content-center align-items-center rounded-circle"
+            style={{ width: 50, height: 50 }}
+          >
+            <i className={"bi bi-credit-card"}></i>
+          </div>
+          <div className="d-flex justify-content-center  flex-column ">
+            <div>CreditCard Payment</div>
+            <div> 500$ </div>
+
+          </div>
+          <div className="d-flex justify-content-evenly flex-column text-left ms-auto align-items-end">
+            <small className="text-body-secondary"> due in 6days</small>
+            <div><Link className="btn btn-primary" href="payment-form">pay</Link></div>
+          </div>
+        </Link>
+        <Link href="/payment-form" className="list-group-item list-group-item-action d-flex gap-3 align-items-center">
+          <div
+            className=" bg-body-tertiary d-flex justify-content-center align-items-center rounded-circle"
+            style={{ width: 50, height: 50 }}
+          >
+            <i className={"bi bi-lightning"}></i>
+          </div>
+          <div className="d-flex justify-content-center  flex-column ">
+            <div>Electricity Bill</div>
+            <div> 300$ </div>
+
+          </div>
+          <div className="d-flex justify-content-evenly flex-column text-left ms-auto align-items-end">
+            <small className="text-body-secondary"> tomorrow</small>
+            <div><Link className="btn btn-primary" href="payment-form">pay</Link></div>
+          </div>
+        </Link>
+      </div>
 
     </div>
   );

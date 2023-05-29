@@ -30,7 +30,7 @@ $btn-primary-bg: #c523bd;
 
 #sidebar {
   box-shadow: 0 0 1rem rgba(#fff, 0.1);
-  backdrop-filter: blur(30px);
+  z-index: 10;
 }
 
 .card {
@@ -92,4 +92,17 @@ $btn-primary-bg: #c523bd;
 .toast.bg-light {
   background-color: rgba($light, 0.8);
   backdrop-filter: blur(30px);
+}
+
+.overlay-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(30px);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

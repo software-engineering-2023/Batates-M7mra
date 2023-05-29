@@ -226,7 +226,7 @@ export default function RootLayout({
                         </div>
                         <hr />
                         <button
-                          className="btn btn-danger"
+                          className="btn btn-outline-danger"
                           onClick={() => {
                             if (confirm("Are you sure you want to logout?")) {
                               localStorage.removeItem("user");
