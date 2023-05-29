@@ -7,7 +7,6 @@ export default function Home() {
   const [remainingTimes, setRemainingTimes] = useState<string[]>([]);
 
   useEffect(() => {
-
     const currentDate = new Date();
     const updatedRemainingTimes: string[] = Array.from(document.querySelectorAll('.date-span')).map((dateSpan) => {
       const dateString = dateSpan.textContent;

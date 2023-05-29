@@ -18,9 +18,10 @@ type CreditCardProps = {
   number: string;
   endYear: number;
   endMonth: number;
+  variant?: "primary" | "secondary";
 };
 
-const CreditCard = ({ name, number, endYear, endMonth }: CreditCardProps) => (
+export const CreditCard = ({ name, number, endYear, endMonth }: CreditCardProps) => (
   <div className="card credit-card">
     <div className="card-body d-flex flex-column justify-content-end">
       <div
@@ -115,10 +116,14 @@ export default function CreditCards() {
         <>
           <div className="col-xxl-9 col-xl-12 order-xxl-1 order-xl-2">
             {showPaymentAlert && (
-              <div className="alert alert-success">Paid successfully!</div>
+              <div className="alert alert-success">
+                <i className="bi bi-check-circle-fill me-2"></i> Paid
+                successfully!
+              </div>
             )}
             {showSuspendAlert && (
               <div className="alert alert-success">
+                <i className="bi bi-check-circle-fill me-2"></i>
                 Card suspended successfully!
               </div>
             )}
@@ -429,7 +434,10 @@ export default function CreditCards() {
               Apply for a credit card
             </Link>
             {showCashbackAlert && (
-              <div className="alert alert-success">Redeemed successfully!</div>
+              <div className="alert alert-success">
+                <i className="bi bi-check-circle-fill me-2"></i> Redeemed
+                successfully!
+              </div>
             )}
             <div className="card bg-body-tertiary">
               <div className="card-body">
