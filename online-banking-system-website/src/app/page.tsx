@@ -189,7 +189,7 @@ export default function Home() {
                     <div className="d-flex justify-content-evenly flex-column text-left ms-auto align-items-end">
                       <small className="text-body-secondary">Tomorrow</small>
                       <div>
-                        <Link className="btn btn-primary" href="payment-form">
+                        <Link className="btn btn-primary" href="/bills/payment-form">
                           Pay
                         </Link>
                       </div>
@@ -209,7 +209,7 @@ export default function Home() {
                     <div className="d-flex justify-content-evenly align-items-end flex-column text-left ms-auto align-items-end">
                       <small className="text-body-secondary">Next Week</small>
                       <div>
-                        <Link className="btn btn-primary" href="payment-form">
+                        <Link className="btn btn-primary" href="/bills/payment-form">
                           Pay
                         </Link>
                       </div>
@@ -231,7 +231,7 @@ export default function Home() {
                         1, July 2023
                       </small>
                       <div>
-                        <Link className="btn btn-primary" href="payment-form">
+                        <Link className="btn btn-primary" href="/bills/payment-form">
                           Pay
                         </Link>
                       </div>
@@ -254,7 +254,7 @@ export default function Home() {
                         Due in 6 days
                       </small>
                       <div>
-                        <Link className="btn btn-primary" href="payment-form">
+                        <Link className="btn btn-primary" href="/bills/payment-form">
                           Pay
                         </Link>
                       </div>
@@ -274,7 +274,7 @@ export default function Home() {
                     <div className="d-flex justify-content-evenly flex-column text-left ms-auto align-items-end">
                       <small className="text-body-secondary">Tomorrow</small>
                       <div>
-                        <Link className="btn btn-primary" href="payment-form">
+                        <Link className="btn btn-primary" href="/bills/payment-form">
                           Pay
                         </Link>
                       </div>
