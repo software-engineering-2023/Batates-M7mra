@@ -168,6 +168,37 @@ export default function LoginPage() {
                 </form>
               </div>
             </div>
+
+            <div className="card mt-3">
+              <div className="card-body">
+                <table className="table table-hover table-borderless table-striped">
+                  <thead>
+                    <tr className="text-uppercase">
+                      <th scope="col">Username</th>
+                      <th scope="col">Password</th>
+                      <th scope="col">Type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>mathew.hany</td>
+                      <td>mathew</td>
+                      <td>Client</td>
+                    </tr>
+                    <tr>
+                      <td>boles.boles</td>
+                      <td>boles</td>
+                      <td>Banker</td>
+                    </tr>
+                    <tr>
+                      <td>nada.labib</td>
+                      <td>nada</td>
+                      <td>Admin</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       )}
