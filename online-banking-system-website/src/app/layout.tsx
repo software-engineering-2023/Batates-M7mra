@@ -103,7 +103,7 @@ export default function RootLayout({
       setLoading(false);
     } else {
       if (!pathname.startsWith("/auth")) {
-        router.replace("/auth/login");
+        router.replace("/auth");
       }
     }
   }, []);
@@ -123,7 +123,7 @@ export default function RootLayout({
             <nav className="navbar navbar-expand-lg bg-body-tertiary d-block d-md-none fixed-top">
               <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                  Bankaak
+                  Nextech
                 </a>
                 <button
                   className="navbar-toggler"
@@ -191,7 +191,7 @@ export default function RootLayout({
                           href="/"
                           className="d-flex align-items-center text-decoration-none link-body-emphasis"
                         >
-                          <span className="fs-1">Bankaak</span>
+                          <span className="fs-1">Nextech</span>
                         </Link>
                         <ul className="nav nav-pills flex-column my-auto">
                           {sidebarLinks
