@@ -98,7 +98,7 @@ export default function contact() {
 
             <li>
               <i className="fas fa-phone mt-4 fa-2x"></i>
-              <p>+ 01 234 567 89</p>
+              <p>+2 103041412</p>
             </li>
 
             <li>

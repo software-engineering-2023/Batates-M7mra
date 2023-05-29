@@ -51,21 +51,21 @@ const sidebarLinks = [
     text: "Bills",
   },
   {
-    href: "/contact-us",
-    icon: "telephone",
-    text: "Contact Us",
-  },
-  {
-    href: "/remainders",
+    href: "/reminders",
     icon: "cash",
-    text: "Remainders",
+    text: "Reminders",
   },
 
   {
     href: "/transfers",
     icon: "arrow-left-right",
     text: "Bank Transfers"
-  }
+  },
+  {
+    href: "/contact-us",
+    icon: "telephone",
+    text: "Contact Us",
+  },
 ];
 
 export default function RootLayout({
@@ -138,7 +138,7 @@ export default function RootLayout({
                 href="/"
                 className="d-flex align-items-center text-decoration-none link-body-emphasis"
               >
-                <span className="fs-1">Bankaak</span>
+                <span className="fs-1">SKAB</span>
               </Link>
               <ul className="nav nav-pills flex-column my-auto">
                 {sidebarLinks.map((link, i) => (
@@ -163,7 +163,7 @@ export default function RootLayout({
                   width={45}
                   className="rounded-circle"
                 />
-                Ahmed Mohsen!
+                Ahmed Mohsen
               </div>
             </div>
 
