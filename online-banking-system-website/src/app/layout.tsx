@@ -65,13 +65,6 @@ const sidebarLinks: SidebarLink[] = [
     userTypes: [UserType.CLIENT],
   },
   {
-    href: "/reminders",
-    icon: "cash",
-    text: "Reminders",
-    userTypes: [UserType.CLIENT],
-  },
-
-  {
     href: "/transfers",
     icon: "arrow-left-right",
     text: "Bank Transfers",
