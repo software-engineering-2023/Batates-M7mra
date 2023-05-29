@@ -1,24 +1,10 @@
 "use client";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
-
 export default function Accounts() {
   const [showApproval, setShowApproval] = useState(false);
   const [showDeclination, setShowDeclination] = useState(false);
-  const onClickApproved = () => {
-    setShowApproval(true);
-    setShowDeclination(false);
-    setTimeout(() => {
-      setShowApproval(false);
-    }, 2000);
-  };
-  const onClickDeclined = () => {
-    setShowApproval(false);
-    setShowDeclination(true);
-    setTimeout(() => {
-      setShowDeclination(false);
-    }, 2000);
-  };
+  const router = useRouter();
   return (
     <div className="row h-100 d-flex justify-content-center align-items-center">
       <div className="col-xl-8 col-lg-10 col-md-12">
@@ -260,51 +246,53 @@ export default function Accounts() {
               </div>
               <div className="row">
                 <div className="col">
-                  <Link href="/credit-cards/open/open-approval">
-                    <button
-                      type="button"
-                      className="btn btn-success w-100"
-                      onClick={onClickApproved}
-                    >
-                      Approve
-                    </button>
-                  </Link>
+                  <button
+                    type="button"
+                    className="btn btn-success w-100"
+                    onClick={() => {
+                      setShowApproval(true);
+                      setTimeout(() => {
+                        router.push("/registration/registration-approval");
+                      }, 4000);
+                    }}
+                  >
+                    Approve
+                  </button>
                 </div>
                 <div className="col">
-                  <Link href="/credit-cards/open/open-approval">
-                    <button
-                      type="button"
-                      className="btn btn-danger w-100"
-                      onClick={onClickDeclined}
-                    >
-                      Decline
-                    </button>
-                  </Link>
+                  <button
+                    type="button"
+                    className="btn btn-danger w-100"
+                    onClick={() => {
+                      setShowDeclination(true);
+                      setTimeout(() => {
+                        router.push("/registration/registration-approval");
+                      }, 4000);
+                    }}
+                  >
+                    Decline
+                  </button>
                 </div>
               </div>
             </form>
           </div>
         </div>
-        {showApproval && (
-          <div className="row mt-3">
-            <div className="col-4"></div>
-            <div className="col-4">
-              <div className="alert alert-success d-flex justify-content-center align-items-center fs-6 ms-2">
-                Credit Card Approved
-              </div>
+        <div className="row d-flex justify-content-center align-items-center mx-auto w-50 mt-2">
+          {showApproval && (
+            <div className="alert alert-success d-flex justify-content-center">
+              <i className="bi bi-check-circle-fill me-2"></i>
+              Account approved
             </div>
-          </div>
-        )}
-        {showDeclination && (
-          <div className="row mt-3">
-            <div className="col-4"></div>
-            <div className="col-4">
-              <div className="alert alert-danger d-flex justify-content-center align-items-center fs-6 ms-2">
-                Credit Card Declined
-              </div>
+          )}
+        </div>
+        <div className="row d-flex justify-content-center align-items-center mx-auto w-50 mt-2">
+          {showDeclination && (
+            <div className="alert alert-danger d-flex justify-content-center">
+              <i className="bi bi-x-circle-fill me-2"></i>
+              Account declined
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );
