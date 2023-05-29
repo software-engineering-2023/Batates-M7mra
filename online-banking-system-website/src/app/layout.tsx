@@ -39,13 +39,6 @@ const sidebarLinks: SidebarLink[] = [
   },
 
   {
-    href: "/transactions",
-    icon: "arrow-right-square",
-    text: "Transactions",
-    userTypes: [UserType.CLIENT],
-  },
-
-  {
     href: "/loans",
     icon: "cash-coin",
     text: "Loans",
@@ -152,7 +145,10 @@ export default function RootLayout({
                         <a
                           className={clsx(
                             "nav-link",
-                            pathname == link.href && "active"
+                            link.href == "/" && pathname == "/" && "active",
+                            link.href != "/" &&
+                              pathname.startsWith(link.href) &&
+                              "active"
                           )}
                           aria-current="page"
                           href={link.href}
@@ -186,6 +182,9 @@ export default function RootLayout({
                       <div
                         className="col-md-4 col-xl-2 col-lg-3 d-md-flex flex-column flex-shrink-0 p-3 h-100 border-end fixed-top d-none bg-body-tertiary"
                         id="sidebar"
+                        style={{
+                          overflow: "scroll",
+                        }}
                       >
                         <Link
                           href="/"
@@ -201,7 +200,12 @@ export default function RootLayout({
                                 <Link
                                   className={clsx(
                                     "nav-link py-4 link-body-emphasis",
-                                    pathname == link.href && "active"
+                                    link.href == "/" &&
+                                      pathname == "/" &&
+                                      "active",
+                                    link.href != "/" &&
+                                      pathname.startsWith(link.href) &&
+                                      "active"
                                   )}
                                   href={link.href}
                                 >

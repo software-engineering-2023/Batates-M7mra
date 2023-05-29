@@ -53,7 +53,12 @@ $btn-primary-bg: #c523bd;
 }
 
 .credit-card.gold {
-  background-image: linear-gradient(to right, darken($warning, 5%) 0%, lighten($warning, 5%) 51%, darken($warning, 5%) 100%);
+  background-image: linear-gradient(
+    to right,
+    darken($warning, 5%) 0%,
+    lighten($warning, 5%) 51%,
+    darken($warning, 5%) 100%
+  );
 }
 
 .credit-card:hover {
