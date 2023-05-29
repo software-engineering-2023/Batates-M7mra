@@ -555,6 +555,387 @@ export default function Home() {
             </div>
           </>
         )}
+
+        {user?.type == UserType.BANKER && (
+          <>
+            <div className="col-xl-6 col-lg-12 d-flex flex-column gap-2">
+              <div className="card">
+                <div className="card-header">Clients</div>
+                <div className="card-body">
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Search by Customer Name or National ID ..."
+                  />
+                  <div className="table-responsive">
+                    <table className="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>ID</th>
+                          <th>Details</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Ahmed Gomaa</td>
+                          <td>12345678912345</td>
+                          <td>
+                            <Link
+                              href="/registration/registration-approval/registration-approval-info"
+                              className="btn btn-primary btn-sm"
+                            >
+                              View
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Mathew Hany</td>
+                          <td>12345389245332345</td>
+                          <td>
+                            <Link
+                              href="/registration/registration-approval/registration-approval-info"
+                              className="btn btn-primary btn-sm"
+                            >
+                              View
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Rafeek Baseem</td>
+                          <td>5848504935894753</td>
+                          <td>
+                            <Link
+                              href="/registration/registration-approval/registration-approval-info"
+                              className="btn btn-primary btn-sm"
+                            >
+                              View
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Boles Waheed</td>
+                          <td>597492840359293</td>
+                          <td>
+                            <Link
+                              href="/registration/registration-approval/registration-approval-info"
+                              className="btn btn-primary btn-sm"
+                            >
+                              View
+                            </Link>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-header">Credit Cards</div>
+                <div className="card-body">
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Search by Credit Card Number"
+                  />
+                  <div className="table-responsive">
+                    <table className="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Number</th>
+                          <th>Client</th>
+                          <th>Balance</th>
+                          <th>Details</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1234 3434 2425 1213</td>
+                          <td>Mathew Hany</td>
+                          <td>$1234</td>
+                          <td>
+                            <Link
+                              href="/credit-cards/open/open-approval/open-approval-info"
+                              className="btn btn-primary btn-sm"
+                            >
+                              View
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1543 5982 1414 232</td>
+                          <td>Boles Waheed</td>
+
+                          <td>$12034</td>
+                          <td>
+                            <Link
+                              href="/credit-cards/open/open-approval/open-approval-info"
+                              className="btn btn-primary btn-sm"
+                            >
+                              View
+                            </Link>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1321 5348 1434 1223</td>
+                          <td>Rafeek Bassem</td>
+
+                          <td>$132</td>
+                          <td>
+                            <Link
+                              href="/credit-cards/open/open-approval/open-approval-info"
+                              className="btn btn-primary btn-sm"
+                            >
+                              View
+                            </Link>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-header">Loans</div>
+                <div className="card-body">
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Search by Client Name"
+                  />
+                  <div className="table-responsive">
+                    <table className="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Amount</th>
+                          <th>Client</th>
+                          <th>Type</th>
+                          <th>Details</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>$10000</td>
+                          <td>Mathew Hany</td>
+                          <td>Car</td>
+                          <td>
+                            <button
+                              type="button"
+                              data-bs-toggle="modal"
+                              data-bs-target="#loan1"
+                              className="btn btn-primary btn-sm"
+                            >
+                              View
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>$25243</td>
+                          <td>Boles Waheed</td>
+                          <td>Personal</td>
+                          <td>
+                            <button
+                              type="button"
+                              data-bs-toggle="modal"
+                              data-bs-target="#loan1"
+                              className="btn btn-primary btn-sm"
+                            >
+                              View
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>$5345353</td>
+                          <td>Rafeek Bassem</td>
+                          <td>Car</td>
+                          <td>
+                            <button
+                              type="button"
+                              data-bs-toggle="modal"
+                              data-bs-target="#loan1"
+                              className="btn btn-primary btn-sm"
+                            >
+                              View
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div className="modal fade" id="loan1" tabIndex={-1}>
+                      <div className="modal-dialog">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <h5 className="modal-title">Loan Info</h5>
+                            <button
+                              type="button"
+                              className="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div className="modal-body">
+                            <h4>Client Name : </h4>{" "}
+                            <p>Ahmed Ayman Ahmed Gomaa</p>
+                            <hr></hr> <h4>Amount : </h4> <p>$60k</p>
+                            <hr></hr> <h4>Net Annual Income : </h4>
+                            <p>$12</p>
+                            <hr></hr> <h4>Net Monthly Income : </h4>
+                            <p>$1</p>
+                            <hr></hr> <h4>Type & Reason : </h4>
+                            <p>Car Loan</p>
+                            <hr></hr> <h4>Marital Status : </h4>
+                            <p>Single</p>
+                            <hr></hr> <h4>Occupation : </h4>
+                            <p>Chemist</p>
+                            <hr></hr> <h4>Years of Experience : </h4>
+                            <p>3</p>
+                            <hr></hr> <h4>Desired Installment : </h4>
+                            <p>$10</p>
+                            <hr></hr> <h4>Comments : </h4>
+                            <p>NA</p>
+                            <hr></hr>
+                            <h4>Bank References</h4>
+                            <p>Bank:SPB, Account# : 10291029501 </p>
+                          </div>
+                          <div className="modal-footer">
+                            <button
+                              className="btn btn-success btn-lg w-100 h-100"
+                              type="button"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-6 col-lg-12">
+              <div className="card mb-3">
+                <div className="card-header">
+                  <i className="bi bi-bell"></i> Announcements
+                </div>
+                <div
+                  className="list-group list-group-flush"
+                  style={{ borderRadius: 20 }}
+                >
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">Maintenance</div>A scheduled
+                      maintenance on our online banking system on{" "}
+                    </div>
+                    <small>
+                      2 hours ago <i className="bi bi-envelope-fill ms-2"></i>
+                    </small>
+                  </a>
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">Ahmed Gomaa</div>
+                      meen ahmed gomaa da?
+                    </div>
+                    <small>
+                      3 days ago <i className="bi bi-envelope-open-fill"></i>
+                    </small>
+                  </a>
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">New Bank Interest Rate</div>
+                      We are excited to inform you that starting from next month
+                    </div>
+                    <small>
+                      21 days ago <i className="bi bi-envelope-open-fill"></i>
+                    </small>
+                  </a>
+                  <a
+                    href="/announcement/details"
+                    className="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">Report 6401 Resolved</div>
+                      Your report has been solved succesfully review now !
+                    </div>
+                    <small>
+                      3 days ago <i className="bi bi-envelope-open-fill"></i>
+                    </small>
+                  </a>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-header">Other Actions</div>
+                <div className="card-body">
+                  <div className="row row-cols-xl-3 row-cols-lg-2 row-cols-md-1 g-3">
+                    <div className="col">
+                      <Link
+                        className="btn btn-primary w-100 d-flex justify-content-center align-items-center"
+                        style={{ height: 100 }}
+                        href="/report/banker"
+                      >
+                        <i className="bi bi-flag me-3"></i>
+                        Reports
+                      </Link>
+                    </div>
+
+                    <div className="col">
+                      <Link
+                        className="btn btn-info w-100 d-flex justify-content-center align-items-center"
+                        style={{ height: 100 }}
+                        href="/credit-cards/open/open-approval"
+                      >
+                        <i className="bi bi-credit-card me-3"></i>
+                        Card Requests
+                      </Link>
+                    </div>
+
+                    <div className="col">
+                      <Link
+                        className="btn btn-secondary w-100 d-flex justify-content-center align-items-center"
+                        style={{ height: 100 }}
+                        href="/loans/banker-loan-page"
+                      >
+                        <i className="bi bi-cash me-3"></i>
+                        Loan Requests
+                      </Link>
+                    </div>
+
+                    <div className="col">
+                      <Link
+                        className="btn btn-warning w-100 d-flex justify-content-center align-items-center"
+                        style={{ height: 100 }}
+                        href="/bank-accounts/open/open-approval"
+                      >
+                        <i className="bi bi-bank me-3"></i>
+                        Open Account Requests
+                      </Link>
+                    </div>
+
+                    <div className="col">
+                      <Link
+                        className="btn btn-light w-100 d-flex justify-content-center align-items-center"
+                        style={{ height: 100 }}
+                        href="/registration/registration-approval"
+                      >
+                        <i className="bi bi-person-check-fill me-3"></i>
+                        Registration Requests
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

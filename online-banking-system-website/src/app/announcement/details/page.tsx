@@ -4,19 +4,21 @@ import React from "react";
 export default function BankAnnouncement() {
   return (
     <div className="row h-50 d-flex justify-content-center align-items-center">
-      <h1 className="card-title">Stolen Card</h1>
+      <h1 className="card-title">Announcement</h1>
       <div className="card">
         <div className="card-body">
           <form className="d-flex flex-column ">
             <p className="announcement-content">
-              Dear Client, <br />
-              We are pleased to inform you that we have successfully resolved
-              the issue regarding your stolen card. Our dedicated team has taken
-              immediate action to secure your account and prevent any
-              unauthorized transactions. Rest assured that your compromised card
-              has been deactivated, and we have initiated the process of issuing
-              a new card to you. You can expect to receive your new card within
-              the next few business days.
+              Dear Valued Customers, <br />
+              We are pleased to announce some exciting updates and important
+              information regarding our banking services. Please take a moment
+              to review the following announcements: New Feature: Mobile Banking
+              App We are thrilled to introduce our new mobile banking
+              application, designed to provide you with convenient and secure
+              access to your accounts anytime, anywhere. The app offers a range
+              of features, including balance inquiries, fund transfers, bill
+              payments, and more. Download it today from [App Store/Google Play]
+              and start enjoying enhanced banking on the go!
             </p>
             <p className="announcement-footer">
               If you have any further concerns or questions, please don't

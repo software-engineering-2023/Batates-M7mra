@@ -271,7 +271,10 @@ export default function RootLayout({
                             width={45}
                             className="rounded-circle"
                           />
-                          {user?.name}
+                          <div className="d-flex flex-column">
+                            <span>{user?.name}</span>
+                            <small>({user?.type})</small>
+                          </div>
                         </div>
                         <hr />
                         <button
