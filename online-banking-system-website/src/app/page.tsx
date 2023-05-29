@@ -482,7 +482,7 @@ export default function Home() {
             <div className="col-6">
               {showAdminAlert && (
                 <div className="alert alert-success">
-                  Default card changed successfully.
+                  <i className="bi bi-check-circle-fill me-2"></i> Action done successfully!
                 </div>
               )}
               <div className="card">

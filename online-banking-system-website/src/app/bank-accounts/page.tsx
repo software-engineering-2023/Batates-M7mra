@@ -204,9 +204,9 @@ export default function BankAccounts() {
     <div>
       <div className="container">
         <div className="row mb-3">
-          <div className="col">
+          <div className="col-xl-4 mx-auto col-lg-6 col-md-12">
             <button
-              className="btn btn-primary btn-lg d-flex align-items-center justify-content-center w-25 mx-auto"
+              className="btn btn-primary btn-lg d-flex align-items-center justify-content-center w-100"
               style={{ height: 75 }}
               data-bs-toggle="modal"
               data-bs-target="#open"
@@ -227,7 +227,7 @@ export default function BankAccounts() {
           </div>
         )}
 
-        <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <div className="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-3">
           {accounts.map((account, i) => (
             <div className="col" key={i}>
               <div className="card bg-body-tertiary">
@@ -283,6 +283,13 @@ export default function BankAccounts() {
                   >
                     <i className="bi bi-arrow-right-circle me-2"></i>
                     View Transactions
+                  </Link>
+                  <Link
+                    href="/transfers"
+                    className="btn btn-info"
+                  >
+                    <i className="bi bi-arrow-left-right me-2"></i>
+                    Bank Transfer
                   </Link>
                   <hr />
                   <button
