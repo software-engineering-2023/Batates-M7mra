@@ -14,6 +14,7 @@ import {
 import { Line } from 'react-chartjs-2';
 import { faker } from "@faker-js/faker";
 import clsx from 'clsx';
+import Link from 'next/link';
 
 ChartJS.register(
   CategoryScale,
@@ -236,7 +237,9 @@ export default function Home() {
           </tr>
         </tbody>
       </table>
-      <h2>Credit Card Transactions</h2>
+      <div className="d-flex justify-content-center">
+      <Link className="btn btn-warning btn-md" href="/credit-card-transactions">View Credit Card Transactions</Link>
+    </div>
     </div>
   );
 }

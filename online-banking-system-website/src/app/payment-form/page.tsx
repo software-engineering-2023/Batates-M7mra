@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { CreditCard } from "../credit-cards/page";
 
 export default function contact() {
   return (
@@ -6,12 +7,12 @@ export default function contact() {
       <div className="mt-5"></div>
       <div className="d-flex justify-content-between align-items-center mb-5">
         <div className="d-flex flex-row align-items-center">
-          <h4 className="text-uppercase mt-1">Eligible</h4>
-          <span className="ms-2 me-3">Pay</span>
+          <h4 className="text-uppercase mt-1 ms-5">Eligible</h4>
+          <span className="me-5">Pay</span>
         </div>
         <Link href="/">Cancel and return to homepage </Link>
       </div>
-      <div className="row">
+      <div className="row ms-4  ">
         <div className="col-md-7 col-lg-7 col-xl-6 mb-4 mb-md-0">
           <div className="card">
             <h5 className="mb-0 text-success mt-3 ms-2 mb-3">$85.00</h5>
@@ -43,7 +44,7 @@ export default function contact() {
               <p>
                 
               </p>
-              <div className="d-flex flex-column mb-3">
+              {/* <div className="d-flex flex-column mb-3">
                 <div
                   className="btn-group-vertical"
                   role="group"
@@ -81,15 +82,33 @@ export default function contact() {
                       <span>**** 5038</span>
                     </div>
                   </label>
-                </div>
+                </div> */}
+              {/* </div> */}
+              <ul className="list-group">
+              <li className="list-group-item">
+              <div className="form-check d-flex justify-content-evenly align-items-center">
+              <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+              <label className="form-check-label" htmlFor="flexRadioDefault1">
+              <CreditCard name="Rafeek Bassem" number="01206457557109" endYear={26} endMonth={10}/>
+              </label>
               </div>
-              <Link className="btn btn-success btn-lg btn-block ms-1 mb-2 " href="/pay-using-card">
-                Proceed to payment
+              </li>
+               <li className="list-group-item p-3">
+               <div className="form-check d-flex justify-content-evenly align-items-center">
+              <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+              <label className="form-check-label" htmlFor="flexRadioDefault2">
+              <CreditCard name="Rafeek Bassem" number="16098760129367" endYear={30} endMonth={11}/>
+               </label>
+               </div>
+               </li>
+               </ul>
+              <Link className="btn btn-primary btn-lg d-flex justify-content-center mt-2 mb-2 ms-2 me-2 " href="/thank-you">
+                Proceed
               </Link>
             </div>
+            </div>
           </div>
-        </div>
-        <div className="col-md-5 col-lg-4 col-xl-4 offset-lg-1 offset-xl-2">
+        <div className="col-md-5 col-lg-4 col-xl-4 offset-lg-1 offset-xl-1">
           <div className="card">
             <div className="p-3">
               <span className="fw-bold">Payment</span>
@@ -135,7 +154,7 @@ export default function contact() {
             </div>
           </div>
         </div>
-      </div>
+        </div>
     </section>
   );
 }

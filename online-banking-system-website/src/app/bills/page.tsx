@@ -102,7 +102,7 @@ export default function Bills() {
                   <Link
                     className="btn btn-primary"
                     role="button"
-                    href="/bills/pay"
+                    href="/payment-form"
                   >
                     Pay
                   </Link>

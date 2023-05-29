@@ -92,7 +92,7 @@ export default function Home() {
           <div className="card card-body text-center mt-5">
             <h1 className="heading display-5 pb-3">Loan Calculator</h1>
             <form id="loan-form">
-              <div className="form-group">
+              <div className="form-group mb-1">
                 <div className="input-group">
                     <span className="input-group-text">$</span>
                   <input
@@ -103,7 +103,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="form-group">
+              <div className="form-group mb-1">
                 <div className="input-group">
                     <span className="input-group-text">%</span>
                   <input
@@ -114,7 +114,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="form-group">
+              <div className="form-group mb-1">
                 <input
                   type="number"
                   id="years"
@@ -122,7 +122,7 @@ export default function Home() {
                   placeholder="Years To Repay"
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group mb-1">
                 <input
                   type="submit"
                   value="Calculate"
@@ -137,7 +137,7 @@ export default function Home() {
               />
             </div> */}
             <div id="result">
-              <div className="form-group">
+              <div className="form-group mb-1">
                 <div className="input-group">
                     <span className="input-group-text">Monthly Payment</span>
                   <input
@@ -148,7 +148,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="form-group">
+              <div className="form-group mb-1">
                 <div className="input-group">
                     <span className="input-group-text">Total Payment</span>
                   <input
@@ -159,7 +159,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="form-group">
+              <div className="form-group mb-1">
                 <div className="input-group">
                     <span className="input-group-text">Total Interest</span>
                   <input
