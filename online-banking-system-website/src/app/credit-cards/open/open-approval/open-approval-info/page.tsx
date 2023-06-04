@@ -252,7 +252,7 @@ export default function Accounts() {
                     onClick={() => {
                       setShowApproval(true);
                       setTimeout(() => {
-                        router.push("/registration/registration-approval");
+                        router.push("/credit-cards/open/open-approval");
                       }, 4000);
                     }}
                   >
@@ -266,7 +266,7 @@ export default function Accounts() {
                     onClick={() => {
                       setShowDeclination(true);
                       setTimeout(() => {
-                        router.push("/registration/registration-approval");
+                        router.push("/credit-cards/open/open-approval");
                       }, 4000);
                     }}
                   >
