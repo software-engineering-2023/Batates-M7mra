@@ -1,8 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { Toast } from "bootstrap";
+import { useState } from "react";
 
 export default function PayBill() {
   const [showPaymentAlert, setShowPaymentAlert] = useState(false);

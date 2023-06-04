@@ -1,8 +1,7 @@
 "use client";
 
-import { GlobalStateContext } from "@/app/layout";
 import { useRouter } from "next/navigation";
-import { useContext, useEffect, useState } from "react";
+import { useState } from "react";
 
 const countries = [
   "Afghanistan",
@@ -668,7 +667,7 @@ export default function Registration() {
                   setShowAlert(true);
                   setTimeout(() => {
                     router.push("/auth/login");
-                  }, 2000);
+                  }, 3000);
                 }}
               >
                 Submit

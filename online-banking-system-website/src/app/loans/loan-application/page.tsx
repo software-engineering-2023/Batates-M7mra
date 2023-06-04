@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useContext, useEffect, useState } from "react";
+import { useState } from "react";
 export default function Accounts() {
   const [showAlert, setShowAlert] = useState(false);
   const router = useRouter();
@@ -175,7 +175,7 @@ export default function Accounts() {
                   setShowAlert(true);
                   setTimeout(() => {
                     router.push("/loans");
-                  }, 6000);
+                  }, 3000);
                 }}
               >
                 Submit

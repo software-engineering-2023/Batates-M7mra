@@ -257,7 +257,7 @@ export default function Accounts() {
                       setShowApproval(true);
                       setTimeout(() => {
                         router.push("/registration/registration-approval");
-                      }, 4000);
+                      }, 3000);
                     }}
                   >
                     Approve
@@ -271,7 +271,7 @@ export default function Accounts() {
                       setShowDeclination(true);
                       setTimeout(() => {
                         router.push("/registration/registration-approval");
-                      }, 4000);
+                      }, 3000);
                     }}
                   >
                     Decline

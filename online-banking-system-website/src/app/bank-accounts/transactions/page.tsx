@@ -161,7 +161,9 @@ export default function Home() {
           <tr>
             <th scope="row">5</th>
             <td>21/3/2022</td>
-            <td><span className="badge rounded-pill text-bg-danger">- $3300</span></td>
+            <td>
+              <span className="badge rounded-pill text-bg-danger">- $3300</span>
+            </td>
             <td>Credit Debt Payment</td>
             <td>----</td>
           </tr>
@@ -226,7 +228,9 @@ export default function Home() {
           <tr>
             <th scope="row">12</th>
             <td>11/7/2022</td>
-            <td><span className="badge rounded-pill text-bg-danger">- $700</span></td>
+            <td>
+              <span className="badge rounded-pill text-bg-danger">- $700</span>
+            </td>
             <td>Credit Debt Payment</td>
             <td>----</td>
           </tr>

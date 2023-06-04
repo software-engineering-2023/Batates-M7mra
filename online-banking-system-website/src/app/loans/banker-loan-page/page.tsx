@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Loans() {
@@ -10,14 +9,14 @@ export default function Loans() {
     setShowDeclination(false);
     setTimeout(() => {
       setShowApproval(false);
-    }, 2000);
+    }, 3000);
   };
   const onClickDeclined = () => {
     setShowApproval(false);
     setShowDeclination(true);
     setTimeout(() => {
       setShowDeclination(false);
-    }, 2000);
+    }, 3000);
   };
 
   return (
@@ -307,11 +306,19 @@ export default function Loans() {
       <table className="table table-dark table-striped mt-4">
         <thead>
           <tr>
-            <th scope="col" className="fs-5">#</th>
+            <th scope="col" className="fs-5">
+              #
+            </th>
             <th>Request ID</th>
-            <th scope="col" className="fs-5">Client</th>
-            <th scope="col" className="fs-5">Date</th>
-            <th scope="col" className="fs-5">Info</th>
+            <th scope="col" className="fs-5">
+              Client
+            </th>
+            <th scope="col" className="fs-5">
+              Date
+            </th>
+            <th scope="col" className="fs-5">
+              Info
+            </th>
           </tr>
         </thead>
         <tbody>

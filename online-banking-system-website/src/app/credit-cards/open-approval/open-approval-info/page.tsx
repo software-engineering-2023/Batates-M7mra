@@ -252,8 +252,8 @@ export default function Accounts() {
                     onClick={() => {
                       setShowApproval(true);
                       setTimeout(() => {
-                        router.push("/credit-cards/open/open-approval");
-                      }, 4000);
+                        router.push("/credit-cards/open-approval");
+                      }, 3000);
                     }}
                   >
                     Approve
@@ -266,8 +266,8 @@ export default function Accounts() {
                     onClick={() => {
                       setShowDeclination(true);
                       setTimeout(() => {
-                        router.push("/credit-cards/open/open-approval");
-                      }, 4000);
+                        router.push("/credit-cards/open-approval");
+                      }, 3000);
                     }}
                   >
                     Decline

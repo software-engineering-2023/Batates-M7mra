@@ -98,11 +98,19 @@ export default function Welcome() {
         </div>
         <div className="col-3 d-flex justify-content-center align-items-center">
           <div className="card w-100">
-            <div className="card-body d-flex flex-column gap-4" >
-              <Link href="/auth/login" className="btn btn-primary btn-lg w-100 d-flex justify-content-center align-items-center" style={{ height: 200 }}>
+            <div className="card-body d-flex flex-column gap-4">
+              <Link
+                href="/auth/login"
+                className="btn btn-primary btn-lg w-100 d-flex justify-content-center align-items-center"
+                style={{ height: 200 }}
+              >
                 <i className="bi bi-box-arrow-in-right me-3"></i> Login
               </Link>
-              <Link href="/auth/registration" className="btn btn-primary btn-lg w-100 d-flex justify-content-center align-items-center" style={{ height: 200 }}>
+              <Link
+                href="/auth/registration"
+                className="btn btn-primary btn-lg w-100 d-flex justify-content-center align-items-center"
+                style={{ height: 200 }}
+              >
                 <i className="bi bi-person-fill-add me-3"></i> Register
               </Link>
             </div>

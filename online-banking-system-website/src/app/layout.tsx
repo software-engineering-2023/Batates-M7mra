@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import clsx from "clsx";
@@ -100,7 +100,7 @@ const sidebarLinks: SidebarLink[] = [
     userTypes: [UserType.BANKER],
   },
   {
-    href: "/credit-cards/open/open-approval",
+    href: "/credit-cards/open-approval",
     icon: "bi bi-credit-card",
     text: "Credit Card Requests",
     userTypes: [UserType.BANKER],

@@ -1,7 +1,6 @@
 "use client";
 
 import { faker } from "@faker-js/faker";
-import clsx from "clsx";
 import { useEffect, useState } from "react";
 
 const countries = [

@@ -263,7 +263,7 @@ export default function Accounts() {
                       setShowApproval(true);
                       setTimeout(() => {
                         router.push("/bank-accounts/open/open-approval");
-                      }, 4000);
+                      }, 3000);
                     }}
                   >
                     Approve
@@ -277,7 +277,7 @@ export default function Accounts() {
                       setShowDeclination(true);
                       setTimeout(() => {
                         router.push("/bank-accounts/open/open-approval");
-                      }, 4000);
+                      }, 3000);
                     }}
                   >
                     Decline

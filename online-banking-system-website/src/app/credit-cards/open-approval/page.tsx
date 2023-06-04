@@ -35,7 +35,7 @@ export default function Accounts() {
             <td>Male</td>
             <td>Platinum</td>
             <td>
-              <Link href="/credit-cards/open/open-approval/open-approval-info">
+              <Link href="/credit-cards/open-approval/open-approval-info">
                 <button type="button" className="btn btn-secondary btn-sm w-50">
                   View
                 </button>

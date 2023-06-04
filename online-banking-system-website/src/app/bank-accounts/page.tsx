@@ -284,10 +284,7 @@ export default function BankAccounts() {
                     <i className="bi bi-arrow-right-circle me-2"></i>
                     View Transactions
                   </Link>
-                  <Link
-                    href="/transfers"
-                    className="btn btn-info"
-                  >
+                  <Link href="/transfers" className="btn btn-info">
                     <i className="bi bi-arrow-left-right me-2"></i>
                     Bank Transfer
                   </Link>
@@ -350,7 +347,7 @@ export default function BankAccounts() {
                     setShowCloseAlert(true);
                     setTimeout(() => {
                       setShowCloseAlert(false);
-                    }, 2000);
+                    }, 3000);
                   }}
                 >
                   Close

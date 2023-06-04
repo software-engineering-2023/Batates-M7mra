@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const formatter = new Intl.NumberFormat("en-US", {
@@ -107,7 +107,7 @@ function getCreditCards() {
 
 export default function CreditCards() {
   const [creditCards, setCreditCards] = useState<CreditCard[]>([]);
-  const [points, setPoints] = useState(1000);
+  const [points] = useState(1000);
   const [showCashbackAlert, setShowCashbackAlert] = useState(false);
   const [showPaymentAlert, setShowPaymentAlert] = useState(false);
   const [paymentAmount, setPaymentAmount] = useState("full");

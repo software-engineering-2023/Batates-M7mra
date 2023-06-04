@@ -21,9 +21,7 @@ export default function contact() {
                   src="http://www.pixempire.com/images/preview/horizontal-line-icon-1.jpg"
                   alt=""
                 />
-                <h4>
-                  
-                </h4>
+                <h4></h4>
               </div>
             </div>
           </div>

@@ -655,7 +655,7 @@ export default function Home() {
                           <td>$1234</td>
                           <td>
                             <Link
-                              href="/credit-cards/open/open-approval/open-approval-info"
+                              href="/credit-cards/open-approval/open-approval-info"
                               className="btn btn-primary btn-sm"
                             >
                               View
@@ -669,7 +669,7 @@ export default function Home() {
                           <td>$12034</td>
                           <td>
                             <Link
-                              href="/credit-cards/open/open-approval/open-approval-info"
+                              href="/credit-cards/open-approval/open-approval-info"
                               className="btn btn-primary btn-sm"
                             >
                               View
@@ -683,7 +683,7 @@ export default function Home() {
                           <td>$132</td>
                           <td>
                             <Link
-                              href="/credit-cards/open/open-approval/open-approval-info"
+                              href="/credit-cards/open-approval/open-approval-info"
                               className="btn btn-primary btn-sm"
                             >
                               View
@@ -891,7 +891,7 @@ export default function Home() {
                       <Link
                         className="btn btn-info w-100 d-flex justify-content-center align-items-center"
                         style={{ height: 100 }}
-                        href="/credit-cards/open/open-approval"
+                        href="/credit-cards/open-approval"
                       >
                         <i className="bi bi-credit-card me-3"></i>
                         Card Requests
