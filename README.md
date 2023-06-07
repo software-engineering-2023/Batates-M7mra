@@ -30,7 +30,7 @@ Nextech Bank
 #TODO: Finish this part
 
 # Video
-![Demo_Video](screenshots/Demo_Video.mp4)
+[![Demo Video](screenshots/Demo_Video_Thumbnail.png)](https://www.youtube.com/watch?v=CPfITgXPPB0)
 
 # Screenshots
 ![Transactions](screenshots/Transactions.png)
