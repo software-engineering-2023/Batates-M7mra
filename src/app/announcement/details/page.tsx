@@ -21,7 +21,7 @@ export default function BankAnnouncement() {
               and start enjoying enhanced banking on the go!
             </p>
             <p className="announcement-footer">
-              If you have any further concerns or questions, please don't
+              If you have any further concerns or questions, please don&apos;t
               hesitate to reach out to our customer support team. We are here to
               assist you and ensure the security of your banking experience.
             </p>

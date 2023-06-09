@@ -22,7 +22,7 @@ export default function Report() {
               <td>52-7516</td>
               <td>balabizo</td>
               <td>Technical Issues</td>
-              <td>'2023-05-25'</td>
+              <td>2023-05-25</td>
               <td>
                 <span className="badge text-bg-warning">Pending</span>
               </td>
@@ -39,7 +39,7 @@ export default function Report() {
               <td>52-7516</td>
               <td>balabizo</td>
               <td>Technical Issues</td>
-              <td>'2023-05-26'</td>
+              <td>2023-05-26</td>
               <td>
                 <span className="badge text-bg-success">Resolved</span>
               </td>
@@ -56,7 +56,7 @@ export default function Report() {
               <td>52-7516</td>
               <td>balabizo</td>
               <td>Technical Issues</td>
-              <td>'2023-05-25'</td>
+              <td>2023-05-25</td>
               <td>
                 <span className="badge text-bg-secondary">In Progress</span>
               </td>

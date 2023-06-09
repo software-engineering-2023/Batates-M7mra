@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { CreditCard } from "./credit-cards/page";
 import { useContext, useState } from "react";
 import { GlobalStateContext } from "./layout";
 import { UserType } from "@/types";
+import { CreditCard } from "@/components/CreditCard";
 
 export default function Home() {
   const { user } = useContext(GlobalStateContext);

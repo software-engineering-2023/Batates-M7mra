@@ -79,14 +79,14 @@ export default function Home() {
                   </h6>
                   <p>
                     Yes. Go to the loans section of your dashboard and you will
-                    find a loan calculator that doesn't work.
+                    find a loan calculator that doesn&apos;t work.
                   </p>
                 </div>
 
                 <div className="col-md-6 col-lg-4 mb-4">
                   <h6 className="mb-3 text-primary">
                     <i className="fas fa-home text-primary pe-2"></i>
-                    who's the best member on this team?
+                    who&apos;s the best member on this team?
                   </h6>
                   <p>
                     <strong>Everyone is equally as good.</strong> (Rafeek).
