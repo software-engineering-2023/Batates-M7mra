@@ -37,7 +37,7 @@ export default function contact() {
                   <h4 className="card-title">This is Card #1</h4>
                   <p className="card-text">
                     Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    up the bulk of the card&apos;s content.
                   </p>
                   <a
                     href="https://v4-alpha.getbootstrap.com/components/card/"
@@ -59,7 +59,7 @@ export default function contact() {
                   <h4 className="card-title">This is Card #2</h4>
                   <p className="card-text">
                     Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    up the bulk of the card&apos;s content.
                   </p>
                   <a
                     href="https://v4-alpha.getbootstrap.com/components/card/"
@@ -81,7 +81,7 @@ export default function contact() {
                   <h4 className="card-title">This is Card #3</h4>
                   <p className="card-text">
                     Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    up the bulk of the card&apos;s content.
                   </p>
                   <a
                     href="https://v4-alpha.getbootstrap.com/components/card/"
@@ -103,7 +103,7 @@ export default function contact() {
                   <h4 className="card-title">This is Card #4</h4>
                   <p className="card-text">
                     Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    up the bulk of the card&apos;s content.
                   </p>
                   <a
                     href="https://v4-alpha.getbootstrap.com/components/card/"

@@ -38,7 +38,7 @@ export default function Home() {
                         placeholder="Cardholder's Name"
                       />
                       <label className="form-label" htmlFor="typeName">
-                        Cardholder's Name
+                        Cardholder&apos;s Name
                       </label>
                     </div>
                   </div>

@@ -48,7 +48,7 @@ export default function Report() {
 
                 <dt className="col-sm-3 ">Description</dt>
                 <dd className="col-sm-9">
-                  System failure and I couldn't login to my profile or anything
+                  System failure and I couldn&apos;t login to my profile or anything
                   , Please solve this problem
                 </dd>
 

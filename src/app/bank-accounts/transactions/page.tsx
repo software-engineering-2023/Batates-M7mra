@@ -24,7 +24,7 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
+const options = {
   responsive: true,
   plugins: {
     legend: {
@@ -52,7 +52,7 @@ const labels = [
   "December",
 ];
 
-export const data = {
+const transData = {
   labels,
   datasets: [
     {
@@ -85,7 +85,7 @@ transactions.sort((a, b) => a.date.getTime() - b.date.getTime());
 export default function Home() {
   return (
     <div>
-      <Line options={options} data={data} />
+      <Line options={options} data={transData} />
       <table className="table table-striped table-hover table-dark table-responsive">
         <thead>
           <tr>

@@ -66,7 +66,7 @@ export default function LoginPage() {
   const [buttonLoading, setButtonLoading] = useState(false);
 
   useEffect(() => {
-    if (localStorage.getItem("user")) {
+    if (typeof window !== "undefined" && localStorage.getItem("user")) {
       router.replace("/");
     } else {
       setShowSidebar(false);
@@ -98,7 +98,7 @@ export default function LoginPage() {
 
   return (
     <div className="container">
-      {!localStorage.getItem("user") && (
+      {typeof window !== "undefined" && !localStorage.getItem("user") && (
         <div className="row">
           <div className="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 d-flex justify-content-center align-items-center flex-column">
             <div

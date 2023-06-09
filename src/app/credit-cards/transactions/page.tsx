@@ -22,7 +22,7 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
+const options = {
   responsive: true,
   interaction: {
     mode: "index" as const,
@@ -67,7 +67,7 @@ const labels = [
   "December",
 ];
 
-export const data = {
+const data = {
   labels,
   datasets: [
     {

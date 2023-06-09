@@ -8,16 +8,61 @@ Nextech Bank
 
 
 # Table of Contents
-- [About This Project](#about-this-project)
-- [Languages and Frameworks](#languages-and-frameworks)
 - [Demo Website](#demo-website)
+- [What is Nextech Bank?](#what-is-nextech-bank)
+- [Languages and Frameworks](#languages-and-frameworks)
 - [Video](#video)
 - [Screenshots](#screenshots)
 - [How to Run Locally?](#how-to-run-locally)
 - [Contributers](#contributers)
 
+
+# Demo Website
+We have deployed a live demo of this app on Vercel for you to easily try it out. 🚀
+
+https://nextech-bank-frontend.vercel.app/
+
+
 # What is Nextech Bank?
-#TODO: Finish this part
+🏦 Nextech Bank is the fully responsive (desktop and mobile friendly) front-end of an online banking system where:
+- Clients can:
+    - Register to use the app
+    - Login to their online account
+    - View their bank accounts.
+    - Open or close bank accounts.
+    - View transaction history.
+    - View their balance graphs.
+    - View their credit cards.
+    - View credit points and redeem them for cashback. 
+    - Issue new credit cards.
+    - Pay credit card debt partially or fully.
+    - Suspend credit cards and apply for replacements or report credit card lost.
+    - View credit card transaction history and graphs.
+    - Transfer money from their bank accounts, internally, domestically or internationally.
+    - Report technical issues or complaints to customer service.
+    - View bills and pay bills for water, electricity, gas .. etc using their credit card.
+    - View their active loans.
+    - Apply for a new loan.
+    - Calculate loan interest before applying for a loan.
+    - Set reminders on bills, credit cards, loans.
+    - View reminders for due bills, credit cards, loans.
+    - View notifications and status updates for their complaints.
+    - View announcements sent by bankers or admins.
+- Bankers can:
+    - View clients registeration requests and approve or reject them.
+    - View account opening requests and approve or reject them.
+    - View credit card application requests and approve or reject them.
+    - View loan requests and approve or reject them.
+    - View details about clients, credit cards, loans or search for them.
+    - View client reports and handle them.
+    - Send announcements to clients or bankers and view other announcements.
+- Admins can:
+    - Perform maintainance tasks like backup, restore, log .. etc.
+    - View clients technical issues with the system and handles them.
+    - Send announcements to clients or bankers and view announcements.
+
+> **Note**
+> This is just the front-end of an online banking system. This intended to just showcase the UI, UX of an online banking system and not the actual backend of the bank. Thus all of the actions do not really do anything in the backend.
 
 # Languages and Frameworks
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
@@ -25,9 +70,6 @@ Nextech Bank
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
-
-# Demo Website
-#TODO: Finish this part
 
 # Video
 [![Demo Video](screenshots/Demo_Video_Thumbnail.png)](https://www.youtube.com/watch?v=CPfITgXPPB0)
